@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bonvic Bundi`,
     siteUrl: `https://www.nyabuya.com`,
-    description: `This is my website portfolio with my blog posts. It's powered by gatsbyjs, inspired by https://mattfarley.ca/ and style by tailwibndCSS`,
+    description: `This is my website portfolio with my blog posts. It's powered by gatsbyjs and style by tailwibndCSS`,
     author: `@bonvic7`,
   },
   plugins: [
@@ -19,6 +19,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,

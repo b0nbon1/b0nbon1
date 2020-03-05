@@ -5,18 +5,28 @@ module.exports = {
       },
 
       extend: {
-          borderWidth: {
-              '14': '14px',
-          },
-          screens:{
-              'dark': {'raw':'(prefers-color-scheme: dark)'}
-          },
-          minHeight: {
-              '1': '25vh',
-              '2': '50vh',
-              '3': '72vh',
-              'sm': '15vh',
-          },
+        borderRadius: {
+            'xl': '70px',
+        },
+        borderWidth: {
+            '14': '14px',
+        },
+        screens:{
+            'dark': {'raw':'(prefers-color-scheme: dark)'}
+        },
+        minHeight: {
+            '1': '25vh',
+            '2': '50vh',
+            '3': '72vh',
+            'sm': '15vh',
+        },
+        height: {
+        'xs': '25vh',
+        'md': '50vh',
+        'xl': '57vh',
+        'lg': '75vh',
+        'sm': '15vh',
+        },
       },
 
       colors: {

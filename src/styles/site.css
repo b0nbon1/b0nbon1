@@ -3,6 +3,8 @@
 @tailwind components;
 
 @import './layouts.css';
+@import './arrows.css';
+@import './casestudy.css';
 
 .container-inner {
   padding-left: 1rem;
@@ -23,16 +25,10 @@
 
 @media (min-width: 1024px){
   .container-inner {
-    max-width: 800px;
+    max-width: 900px;
   }
 }
 
 button:focus {outline:0;}
-
-dark-mode-toggle {
-  position: absolute;
-  bottom: 2rem;
-  right: 3rem;
-}
 
 @tailwind utilities;

@@ -1,0 +1,74 @@
+button.arrow {
+  position: relative;
+  display: inline-block;
+  width: 5.6em;
+  height: 3em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  line-height: 3em;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+button.arrow svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.5em;
+  height: 3em;
+}
+
+button.arrow svg g line,
+button.arrow svg g polyline,
+button.arrow svg g circle {
+  fill: none;
+  stroke: #fff;
+}
+
+button.arrow svg g line,
+button.arrow svg g polyline {
+  stroke-miterlimit: 10;
+}
+
+button.arrow svg g circle {
+  display: block;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.066em;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset ease-out 0.5s;
+  transition: stroke-dashoffset ease-out 0.5s;
+}
+
+button.arrow font {
+  z-index: 20;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+button.arrow:hover {
+  -webkit-transform: translateZ(0) translateX(0.5em);
+          transform: translateZ(0) translateX(0.5em);
+}
+
+button.arrow:hover svg g circle {
+  stroke-dashoffset: 200;
+}
+
+.turn-180 {
+  transform: rotate(180deg)
+}

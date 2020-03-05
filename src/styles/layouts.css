@@ -51,20 +51,6 @@
   }
 }
 
-.gatsby-image-wrapper {
+.resize-prof {
   width: 300px !important;
-}
-
-#dark-mode-toggle-1 {
-  --dark-mode-toggle-dark-icon: url("https://googlechromelabs.github.io/dark-mode-toggle/demo/moon.png");
-  --dark-mode-toggle-light-icon: url("https://googlechromelabs.github.io/dark-mode-toggle/demo/sun.png");
-  --dark-mode-toggle-remember-icon-checked: url("https://googlechromelabs.github.io/dark-mode-toggle/demo/checked.svg");
-  --dark-mode-toggle-remember-icon-unchecked: url("https://googlechromelabs.github.io/dark-mode-toggle/demo/unchecked.svg");
-  --dark-mode-toggle-remember-font: 0.75rem 'Helvetica';
-  --dark-mode-toggle-legend-font: bold 0.85rem 'Helvetica';
-  --dark-mode-toggle-label-font: 0.85rem 'Helvetica';
-  --dark-mode-toggle-color: var(--text-color);
-  --dark-mode-toggle-background-color: none;
-  --dark-mode-toggle-active-mode-background-color: var(--accent-color);
-  --dark-mode-toggle-remember-filter: invert(100%);
 }
