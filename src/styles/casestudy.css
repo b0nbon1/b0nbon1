@@ -14,15 +14,6 @@
   width: 100%;
 }
 
-@media (prefers-color-scheme: dark) { 
-  .why-me {
-    background-color: #362066;
-  }
-
-  .o-check *::before {
-    color: #7510F7;
-  }
-}
 
 @media (min-width: 640px){
   .why-me {
@@ -51,4 +42,33 @@
   color: #b17acc;
   font-size: 20px;
   margin-right: .5rem;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-transparent {
+  @apply bg-transparent border border-purple-450;
+}
+.btn-transparent:hover {
+  @apply bg-purple-450 text-white;
+}
+
+@media (prefers-color-scheme: dark) { 
+  .why-me {
+    background-color: #362066;
+  }
+
+  .o-check *::before {
+    color: #7510F7;
+  }
+
+  .btn-transparent {
+    @apply bg-transparent border border-purple-900;
+  }
+
+  .btn-transparent:hover {
+    @apply bg-purple-900 text-white;
+  }
 }
