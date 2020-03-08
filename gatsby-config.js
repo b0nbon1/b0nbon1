@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bonvic Bundi`,
     siteUrl: `https://www.nyabuya.com`,
-    description: `This is my website portfolio with my blog posts. It's powered by gatsbyjs and style by tailwibndCSS`,
+    description: `Bonvic Bundi. Software Engineer based in Kigali, Rwanda. Mostly working with Javascript. Currently breaking stuff at Andela & Irembo.`,
     author: `@bonvic7`,
   },
   plugins: [

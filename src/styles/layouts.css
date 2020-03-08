@@ -33,6 +33,17 @@
     z-index: 1000000;
   }
 
+  @media (prefers-color-scheme: dark) {
+    .menu-btn:checked ~ .menu {
+      background: #1a202c;
+    }
+
+    .navicon::before,
+    .navicon::after {
+      background: #eeeeee;
+    }
+  }
+
   .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }

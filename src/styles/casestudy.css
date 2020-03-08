@@ -1,3 +1,54 @@
 .colon-after::after {
   content: ":";
 }
+
+.why-me {
+  background-blend-mode: luminosity;
+  background-image:
+    url('../../static/thatsme.png');
+  background-color: #3507a1;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width:  90%;
+  min-height: 60vh;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) { 
+  .why-me {
+    background-color: #362066;
+  }
+
+  .o-check *::before {
+    color: #7510F7;
+  }
+}
+
+@media (min-width: 640px){
+  .why-me {
+    max-width: 640px;
+    min-height: 35rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  .why-me {
+    width: 768px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px){
+  .why-me {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.o-check *::before {
+  content: '\25CE';
+  color: #b17acc;
+  font-size: 20px;
+  margin-right: .5rem;
+}

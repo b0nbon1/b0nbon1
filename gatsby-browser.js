@@ -3,5 +3,13 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-import "./src/styles/site.css"
-// You can delete this file if you're not using it
+import "./src/styles/site.css";
+
+// export const onClientEntry = () => {
+//   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
+//   if (!(`IntersectionObserver` in window)) {
+//     // no-unused-expressions
+//     import(`intersection-observer`)
+//     console.log(`# IntersectionObserver is polyfilled!`)
+//   }
+// }

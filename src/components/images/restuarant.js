@@ -8,7 +8,7 @@ export default () => {
       placeholderImage: file(relativePath: { eq: "restuarant.png" }) {
         childImageSharp {
           fluid(maxHeight: 850, maxWidth: 1700) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

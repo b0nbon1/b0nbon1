@@ -6,6 +6,7 @@ import { MdImportantDevices } from "react-icons/md";
 import { FaRegNewspaper } from "react-icons/fa";
 import { GiPencilBrush } from "react-icons/gi";
 import CaseStudy from './CaseStudy';
+import WhyMe from './Whyme';
 
 const Hero = () => {
         return ( 
@@ -18,7 +19,7 @@ const Hero = () => {
                 </div>
             </section> 
             <section className = "container-inner mx-auto" >
-                <img className = "mx-auto" src = { heroImage } width = '600' height = '300' alt = 'hero with computers' />
+                <img className="mx-auto" src = { heroImage } width = '600' height = '300' alt = 'hero with computers' />
             </section> 
             <section className = "relative flex flex-col content-center justify-center -mt-px" >
                 <div className = "relative bg-purple-450 dark:bg-purple-700 text-white min-h-2" >
@@ -39,7 +40,7 @@ const Hero = () => {
                     <div className = "w-11/12 bg-white dark:bg-gray-900 min-h-2 shadow-2xl mx-auto rounded-lg" >
                         <div className = "flex flex-col lg:flex-row justify-around min-h-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center" >
                             <div className = "m lg:w-2/6 border-gray-300 dark:border-gray-800 p-16 border-b lg:border-r lg:border-b-0">
-                                <MdImportantDevices className = 'text-purple-450 dark:text-purple-200 align-middle mx-auto mb-8' size = '5rem' />
+                                <MdImportantDevices className ='text-purple-450 dark:text-purple-200 align-middle mx-auto mb-8' size = '5rem' />
                                 <h1 className = 'font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-none sm:leading-tight md:leading-normal lg:leading-relaxed xl:leading-loose mb-4'> Develop </h1> 
                                 <p className = 'font-light text-lg min-h-sm' > I Build things on the web that are a little bit more complicated than your simple template - based blog.And also mobile apps to make your life easier. </p> 
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6' > Languages I can speak: </h2> 
@@ -92,9 +93,15 @@ const Hero = () => {
                         Here are a few projects I 've worked on recently. Want to see more? 
                         <a href ="https://github.com/b0nbon1?tab=repositories" target="_blank" rel="noopener noreferrer" className = "ml-2 text-purple-600 dark:text-purple-400 hover:text-purple-450"> View on Github </a>. 
                     </p> 
-                    < CaseStudy/>
+                    <CaseStudy />
                 </div> 
-            </section> 
+            </section>
+            <section>
+                <WhyMe />
+            </section>
+            <section>
+                
+            </section>
         </div>
             )
         }
