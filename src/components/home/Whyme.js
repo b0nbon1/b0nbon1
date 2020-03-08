@@ -10,7 +10,7 @@ export default () => {
         Why Me?
       </h1>
       <div className="flex flex-col md:flex-row justify-around md:justify-start">
-        <div className="why-me mx-auto md:mx-0 md:max-w-md md:max-h-screen md:rounded-tr-lg md:rounded-br-xl rounded-lg" />
+        <div className="why-me mx-auto md:mx-0 md:-ml-10 md:max-w-md md:max-h-screen md:rounded-tr-lg md:rounded-br-xl rounded-lg" />
         <div className="w-full p-5 md:p-10">
           <h1 className="text-lg text-black tracking-wide dark:text-white text-justify md:text-left mb-5 md:-mt-10 font-thin">
             As a programmer, it is my job to put myself out of business. What I

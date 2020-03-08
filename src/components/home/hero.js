@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import Profile from "../images/profile";
 import heroImage from '../../images/hackericon.svg';
 import { MdImportantDevices } from "react-icons/md";
@@ -86,7 +85,7 @@ const Hero = () => {
                     </div> 
                 </div> 
             </section> 
-            <section className = "min-h-screen relative pt-20">
+            <section className = "min-h-screen relative pt-20 md:mb-40">
                 <div className = "mx-auto w-100 container-inner text-center">
                     <h1 className = "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal text-black dark:text-white" > Case Study. </h1> 
                     <p className = "font-light text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
@@ -96,11 +95,8 @@ const Hero = () => {
                     <CaseStudy />
                 </div> 
             </section>
-            <section>
+            <section className="mb-20 md:mb-48">
                 <WhyMe />
-            </section>
-            <section>
-                
             </section>
         </div>
             )

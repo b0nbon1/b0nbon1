@@ -20,6 +20,12 @@ module.exports = {
             '3': '72vh',
             'sm': '15vh',
         },
+        maxHeight: {
+            '1': '25vh',
+            '2': '50vh',
+            '3': '72vh',
+            'sm': '15vh',
+        },
         height: {
         'xs': '25vh',
         'md': '50vh',

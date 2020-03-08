@@ -46,7 +46,7 @@
   }
 }
 
-.o-check *::before {
+.o-check > *::before {
   content: '\25CE';
   color: #b17acc;
   font-size: 20px;

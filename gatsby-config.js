@@ -33,13 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Bonvic's Portfolio & blog`,
+        short_name: `Bon Blog`,
+        description: `You can get all Bonvic's blog and about him on this application`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/window.png`,
       },
     },
     `gatsby-plugin-offline`,
