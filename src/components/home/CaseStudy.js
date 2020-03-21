@@ -4,9 +4,7 @@ import projects from '../../data/projects';
 
 const CaseStudy = () => {
   const [project, setProject] = useState(0);
-  // const handleNextProject = () => {
-  //   setProject
-  // }
+
   return (
     <div className="mx-auto my-16 flex flex-col h-lg relative bg-transparent">
       <div className="bg-purple-50 shadow-2xl rounded-t-lg overflow-hidden">

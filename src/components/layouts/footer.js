@@ -8,6 +8,7 @@ import {
   FaRegCopyright,
 } from "react-icons/fa";
 import { Link } from "gatsby";
+import Logo from "../images/logo";
 
 // Todo: remove hard coded dates
 export default () => {
@@ -23,7 +24,7 @@ export default () => {
       <footer className="bg-purple-450 dark:bg-purple-700 text-gray-200 w-full">
         <div className="container-inner mx-auto">
           <div className="flex flex-col items-center justify-center py-8 min-h-3 mt-20">
-            <h1 className="font-black text-4xl">&lt;B /&gt;</h1>
+            <div className='resize-footer-logo'><Logo /></div>
             <div className="md:w-1/3 text-center my-5 mx-auto">
               <span className="font-thin text-2xl">
                 Living, learning, & leveling up one day at a time.

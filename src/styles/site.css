@@ -5,6 +5,18 @@
 @import './layouts.css';
 @import './arrows.css';
 @import './casestudy.css';
+@import './blog.css';
+
+html {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1a202c;
+  }
+}
 
 .container-inner {
   padding-left: 1rem;

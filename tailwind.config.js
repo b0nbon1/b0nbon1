@@ -19,6 +19,7 @@ module.exports = {
             '2': '50vh',
             '3': '72vh',
             'sm': '15vh',
+            '72': '24rem',
         },
         maxHeight: {
             '1': '25vh',
@@ -32,6 +33,7 @@ module.exports = {
         'xl': '57vh',
         'lg': '75vh',
         'sm': '15vh',
+        '72': '24rem',
         },
       },
 
