@@ -1,0 +1,116 @@
+.blog-logo {
+  width: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+div.blog-card {
+  height: 25rem;
+  @apply bg-gray-300 m-10;
+  @apply shadow-xl;
+  border-radius: .6rem;
+  position: relative;
+}
+
+div.blog-card:hover {
+  @apply shadow-2xl;
+  height: 24rem;
+  cursor: pointer;
+  transition: box-shadow .5s ease-in-out;
+  -webkit-animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.blog-card .blog-card__image {
+  height: 50%;
+  border-radius: .6rem;
+  overflow: hidden;
+}
+
+.blog-card .blog-card__image img {
+  border-radius: .6rem;
+}
+
+.blog-card:hover .blog-card__image img {
+  -webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+}
+
+
+.blog-card .blog-card__body .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  @apply border-gray-300 border-t;
+}
+
+.blog-card .blog-card__body {
+  height: 16rem;
+  margin-top: -3rem;
+  @apply bg-gray-200 w-full;
+  border-radius: .6rem;
+  position: absolute;
+}
+
+div.blog-card:hover .blog-card__body {
+  -webkit-animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-fwd-top {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) translateY(-10px);
+            transform: translateZ(160px) translateY(-10px);
+  }
+}
+@keyframes slide-fwd-top {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px) translateY(-10px);
+            transform: translateZ(160px) translateY(-10px);
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  div.blog-card {
+    @apply bg-gray-800;
+  }
+
+  .blog-card .blog-card__body {
+    @apply bg-gray-800;
+  }
+
+  .blog-card .blog-card__body .footer {
+    @apply border-gray-700;
+  }
+}

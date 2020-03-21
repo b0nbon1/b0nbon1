@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
+import Logo from "../images/logo";
+// import logo from '../../images/Bonbon.png'
 
 export default () => {
   return (
     <header className="">
-      <nav className="nav h-20 flex flex-wrap items-center justify-between px-4">
-        <div className="flex flex-no-shrink items-center mr-6 py-3 text-purple-450">
-          <a href="/">
-            <h1 className="font-ram text-3xl  mr-2 text-purple-450 font-bold">
-              &lt;B /&gt;
-            </h1>
-          </a>
+      <nav className="nav h-16 flex flex-wrap items-center justify-between px-4">
+        <div className="flex flex-no-shrink items-center">
+          <Link className='logo' to="/">
+            <Logo />
+          </Link>
         </div>
 
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />

@@ -11,7 +11,7 @@ const Hero = () => {
         return ( 
         <div className = "min-h-screen" >
             <section className = "container-inner mx-auto flex flex-col justify-center text-center items-center min-h-3" >
-                <h1 className = "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black dark:text-white" > Web Designer, Web &amp; Mobile Developer &amp; Blogger </h1> 
+                <h1 className = "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black dark:text-white" > Web Designer, Software Developer &amp; Blogger </h1> 
                 <h5 className = "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-light mb-10" > I code simple things, and I love what I do . </h5> 
                 <div className = 'block' >
                     <Profile />

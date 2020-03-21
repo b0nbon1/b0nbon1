@@ -7,7 +7,42 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        printRejected: true,
+        develop: false,
+        purgeOnly: [`src/styles/`]
+      }
+    },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#2de3da`,
+        showSpinner: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve(`./src/components/layouts/layout`),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 970,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-static-images`,
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -28,6 +63,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/content/blog/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -40,7 +82,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/window.png`,
+        icon: `src/images/Bonbon.png`,
       },
     },
     `gatsby-plugin-offline`,
