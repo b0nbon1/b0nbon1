@@ -58,7 +58,7 @@ typings/
 .cache/
 public
 
-# Mac files
+# Mac file
 .DS_Store
 
 # Yarn
