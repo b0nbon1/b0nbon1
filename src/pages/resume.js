@@ -28,6 +28,9 @@ const ResumePage = () => {
                 <Page
                   pageNumber={1}
                 />
+                <Page
+                  pageNumber={2}
+                />
             </Document>
           </div>
         </div>

@@ -47,7 +47,6 @@ const Hero = () => {
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> Dev Tools: </h2> 
                                 <p className = 'font-light'> Visual Studio code </p> 
                                 <p className = 'font-light'> Android Studio </p> 
-                                <p className = 'font-light'> Figma </p> 
                                 <p className = 'font-light'> AWS </p> 
                                 <p className = 'font-light'> Github </p> 
                                 <p className = 'font-light'> Terminal </p> 
@@ -60,12 +59,10 @@ const Hero = () => {
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> Hey oh!paint what: </h2> 
                                 <p className = 'font-light'> Apps, Web, UI, UX, mobile apps, more... </p> 
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> Dev Tools: </h2> 
-                                <p className = 'font-light'> Visual Studio code </p> 
-                                <p className = 'font-light'> Android Studio </p> 
                                 <p className = 'font-light'> Figma </p> 
-                                <p className = 'font-light'> AWS </p> 
-                                <p className = 'font-light'> Github </p> 
-                                <p className = 'font-light'> Terminal </p> 
+                                <p className = 'font-light'> Adobe XD </p> 
+                                <p className = 'font-light'> Dribbble </p>
+                                <p className = 'font-light'> Netlify </p>
                                 <p className = 'font-hairline'> many more... </p> 
                             </div> 
                             <div className = "m lg:w-2/6 p-16" >

@@ -6,6 +6,7 @@
 @import './arrows.css';
 @import './casestudy.css';
 @import './blog.css';
+@import './singleBlog.css';
 
 html {
   background-color: #ffffff;

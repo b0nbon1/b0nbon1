@@ -10,7 +10,7 @@ color: teal
 
 # Big-0 Notation Primer
 
-> *O(1) is holy.* `~Hamid Tizhoosh`
+> *O(1) is holy. ~Hamid Tizhoosh
 
 The Big-O notation measures the worst-case complexity of an algorithm. In Big-O
 notation, n represents the number of inputs. The question asked with Big-O is the
@@ -25,7 +25,7 @@ O(1) does not change with respect to input space. Hence, O(1) is referred to as 
 An exmple of an of an O(1):
 ```javascript
 function exampleConstantFunc(n) {
-    return n*n;
+    return n * n;
 }
 ```
 
@@ -108,6 +108,7 @@ However, it can be challenging to calculate f(n). Big-O notation provides some f
 ### Coefficient Rule: “Get Rid of Constants”
 
 Let’s first review the coefficient rule. This rule is the easiest rule to understand. It simply requires you to ignore any non-input-size-related constants. Coefficients in Big-O are negligible with large input sizes. Therefore, this is the most important rule of Big-O notations.
+
 > If f(n) is O(g(n)), then kf(n) is O(g(n)), for any constant k > 0.
 
 This means that both 5f(n) and f(n) have the same Big-O notation of O(f(n)).
@@ -122,7 +123,9 @@ function a(n){
     return count;
 }
 ```
+
 > This block of code has f(n) = n. This is because it adds to count n times. Therefore, this function is O(n) in time complexity:
+
 ```javascript
 function a(n){
     var count =0;
@@ -140,6 +143,7 @@ It is going to perform it n times. Any constants are negligible in Big-O notatio
 ### Sum Rule: “Add Big-Os Up”
 
 The sum rule is intuitive to understand; time complexities can be added. Imagine a master algorithm that involves two other algorithms. The Big-O notation of that master algorithm is simply the sum of the other two Big-O notations.
+
 > If f(n) is O(h(n)) and g(n) is O(p(n)), then f(n)+g(n) is O(h(n)+p(n)).
 
 It is important to remember to apply the coefficient rule after applying this rule.
@@ -164,20 +168,22 @@ However, when applying the coefficient rule, the final result is O(n) = n.
 ### Product Rule: “Multiply Big-Os”
 
 The product rule simply states how Big-Os can be multiplied.
+
 > If f(n) is O(h(n)) and g(n) is O(p(n)), then f(n)g(n) is O(h(n)p(n)).
+
 The following code block demonstrates a function with two nested for loops for which the product rule is applied:
 
 ```javascript
-function (n){
-    var count =0;
-    for (var i=0; i<n; i++){
-        count+=1;
-        for (var i=0; i<5*n; i++){
+    function (n){
+        var count =0;
+        for (var i=0; i<n; i++){
             count+=1;
+            for (var i=0; i<5*n; i++){
+                count+=1;
+            }
         }
+        return count;
     }
-    return count;
-}
 ```
 
 In this example, f(n) = 5n*n because line 7 runs 5n times for a total of n iterations.
@@ -187,18 +193,20 @@ Therefore, this results in a total of 5n<sup>2</sup> operations. Applying the co
 
 The polynomial rule states that polynomial time complexities have a Big-O notation of the same polynomial degree.
 Mathematically, it’s as follows:
+
 > If f(n) is a polynomial of degree k, then f(n) is O(n<sup>k</sup>).
+
 The following code block has only one for loop with quadratic time complexity:
 ```javascript
-function a(n){
+    function a(n){
 
-    var count =0;
+        var count =0;
 
-    for (var i=0; i<n*n; i++){
-        count+=1;
+        for (var i=0; i<n*n; i++){
+            count+=1;
+        }
+        return count;
     }
-    return count;
-}
 ```
 
 In this example, f(n) = n<sup>2</sup> because line 4 runs n*n iterations.
@@ -226,10 +234,10 @@ Let us see an example of how we can calculate the complexity in that case?
     pqr(); // O(log(n)) operation
  }
  ```
-
 The collective complexity of this code would be the summation of the complexity of both the sections. So, in this case, the overall complexity would be O(n + log n), which asymptotically will be O(n).
 
 2. When we have branches in our function with varying time complexity, depending on what type of runtime complexity we are talking about, we will need to pick the correct choice:
+
 ```javascript
  function xyz() {
     if (someCondition) {
@@ -242,6 +250,7 @@ The collective complexity of this code would be the summation of the complexity 
 In this case, the worst case complexity will be decided by whatever is worst of the two branches, which would be O(n), but the best case complexity would be O(log(n)).
 
 3. Recursive algorithms are a little tricky compared to their non-recursive counterparts, since not only do we need to determine what the complexity of our algorithm is, we also need to keep in mind how many times recursion would get triggered because that would contribute toward the overall complexity of the algorithm as shown in the following code snippet:
+
 ```javascript
  function rec1(array) {
     // O(1) operations

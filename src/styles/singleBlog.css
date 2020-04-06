@@ -1,0 +1,78 @@
+.style-mdx {
+
+}
+
+.style-mdx p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.style-mdx h1 {
+  line-height: 1.6;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.style-mdx h2 {
+  line-height: 1.6;
+  font-size: 25px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.style-mdx h3 {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+
+.style-mdx ol {
+  list-style: decimal;
+  margin: 1rem 0 1rem 3rem;
+  font-size: 18px;
+}
+
+.style-mdx ul {
+  list-style-type: square;
+  margin: 1rem 0 1rem 3rem;
+  font-size: 18px;
+}
+
+
+
+.style-mdx blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.style-mdx blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.style-mdx blockquote p {
+  display: inline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .style-mdx blockquote:before {
+    color: #718096;
+  }
+
+  .style-mdx blockquote {
+    background: #2d3748;
+  }
+}
