@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaSlackHash, FaLink } from "react-icons/fa";
 import { Link } from "gatsby";
 import Logo from "../images/logo";
 
@@ -7,8 +6,6 @@ const numberList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,
 
 export default ({ children }) => {
   const wholeWindow = useRef()
-  const [openSide, setOpenSide] = useState('');
-  const [checked, setChecked] = useState(false);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -16,18 +13,6 @@ export default ({ children }) => {
   }, [height])
 
   console.log(height);
-
-  const handleMouseEnter = () => {
-    setOpenSide('opened');
-  };
-
-  const handleMouseleave = () => {
-    setOpenSide('');
-  };
-
-  const handleChecked = (e) => {
-    setChecked(e.target.checked);
-  }
 
   return (
     <div className='text-gray-800 bg-white dark:bg-gray-900 dark:text-white leading-normal flex flex-col min-h-full font-mono' ref={wholeWindow}>
@@ -37,27 +22,6 @@ export default ({ children }) => {
         </Link>
       </div>
       <aside
-        role='aside'
-        onMouseLeave={handleMouseleave}
-        className={`sidebar ${openSide}`}
-      >
-        <div className="sidebar__wrapper">
-        <div className="mt-24">
-          <label className="switch-toggle outer rect">
-            <span><FaSlackHash className='ml-1 m-1 z-50 text-purple-50 absolute'  size={checked ? '1.6rem' : '1.8rem'}/></span>
-            <span className="float-right"><FaLink className='-ml-10 m-1 z-50 text-purple-50 absolute' size={checked ? '1.8rem' : '1.6rem'} /></span>
-            <input
-              type="checkbox"
-              checked={checked}
-              onChange={handleChecked} 
-              />
-            <div></div>
-          </label>
-        </div>
-        </div>
-      </aside>
-      <aside
-      onMouseEnter={handleMouseEnter}
       style={{ minHeight: `${height}px` }}
       className="bg-gray-200 dark:bg-gray-800 border-r border-gray-300 dark:border-gray-700 shadow-lg w-10 flex flex-col absolute">
         <svg version="1.1" viewBox="0 0 24 24" className="line-numbers_icon w-8 h-8 my-3 self-center text-gray-500 svg-fill mt-16" style={{ fill: 'currentColor', stroke: 'none' }}>

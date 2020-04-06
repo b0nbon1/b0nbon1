@@ -76,7 +76,6 @@ module.exports = {
         icon: `src/images/Bonbon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
