@@ -31,6 +31,27 @@
   font-weight: 600;
 }
 
+.style-mdx h4 {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.style-mdx h4 {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.style-mdx h5 {
+  line-height: 1.6;
+  font-size: 14px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
 
 .style-mdx ol {
   list-style: decimal;
@@ -65,6 +86,14 @@
 
 .style-mdx blockquote p {
   display: inline;
+}
+
+.style-mdx a {
+  color: #0d96f2;
+}
+
+.style-mdx a:hover {
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {

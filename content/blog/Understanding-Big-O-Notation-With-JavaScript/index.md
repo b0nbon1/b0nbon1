@@ -1,8 +1,8 @@
 ---
 title: Understanding Big-O Notation With JavaScript
-featured: true
-date: 2017-09-10 00:00:00 +0300
-description: The Big-O notation measures the worst-case complexity of an algorithm. In Big-O notation, n represents the number of inputs.
+featured: false
+date: 2019-09-10 00:00:00 +0300
+description: The Big-O notation measures the worst-case complexity of an algorithm. In Big-O notation, n represents the number of inputs. This article covers javascript Big-O notation
 img: ./algodraw.svg
 tags: [ Javascript, algorithms, big-0, algo]
 color: teal
