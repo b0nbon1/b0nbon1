@@ -62,7 +62,9 @@ const Hero = () => {
                                 <p className = 'font-light'> Figma </p> 
                                 <p className = 'font-light'> Adobe XD </p> 
                                 <p className = 'font-light'> Dribbble </p>
-                                <p className = 'font-light'> Netlify </p>
+                                <p className = 'font-light'> Balsamiq Mockups</p>
+                                <p className = 'font-light'> Marvel</p>
+                                <p className = 'font-light'>Pen &amp; Paper</p>
                                 <p className = 'font-hairline'> many more... </p> 
                             </div> 
                             <div className = "m lg:w-2/6 p-16" >
@@ -73,10 +75,10 @@ const Hero = () => {
                                 <p className = 'font-light'> Programming languages, Web frameworks, Designs, Random... </p> 
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> blogs Stats: </h2> 
                                 <p className = 'font-light'> 1 year of writing </p> 
-                                <p className = 'font-light'> 5 posts </p> 
-                                <p className = 'font-light'> 12 comments </p> 
-                                <p className = 'font-light'> 100 views </p> 
-                                <p className = 'font-light'> 300 likes </p> 
+                                <p className = 'font-light'> 1 posts </p> 
+                                <p className = 'font-light'> 1 topic </p> 
+                                {/* <p className = 'font-light'> 100 views </p> 
+                                <p className = 'font-light'> 300 likes </p>  */}
                             </div> 
                         </div> 
                     </div> 

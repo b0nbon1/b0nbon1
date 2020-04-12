@@ -3,13 +3,15 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import "prismjs/themes/prism.css"
 import Footer from "../components/layouts/footer";
+import SEO from '../components/seo';
 
 
 export default function PageTemplate({ data: { mdx } }) {
 
   return (
     <div className="flex flex-col">
-      <div className="text-gray-900 dark:text-gray-100 container-inner mx-auto font-serif">
+      <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} />
+      <div className="text-gray-900 dark:text-gray-100 container-inner mx-auto font-helvetica">
         <h1 className="text-4xl font-bold">{mdx.frontmatter.title}</h1>
         <div className='style-mdx'>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -26,7 +28,8 @@ export const pageQuery = graphql`
       id
       body
       frontmatter {
-        title
+        title,
+        description
       }
     }
   }
