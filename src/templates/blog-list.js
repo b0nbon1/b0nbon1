@@ -50,7 +50,7 @@ const BlogIndex = ({ data }) => {
 export const pageQuery = graphql`
   query blogListQuery ($skip: Int!, $limit: Int!) {
     allMdx (
-      sort: { fields: [frontmatter___title], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
