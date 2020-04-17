@@ -1,6 +1,6 @@
 ---
 title: Cleaning up your code using optional chaining Javascript
-featured: true
+featured: false
 date: 2020-04-12 00:00:00 +0200
 description: The optional chaining javascript operator ?. permits reading the value of a property located deep within a chain of connected objects without having to expressly validate that each reference in the chain is valid.
 img: ./chain.svg
