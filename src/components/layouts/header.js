@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import Logo from "../images/logo";
-// import logo from '../../images/Bonbon.png'
 
 export default () => {
   return (
@@ -33,13 +32,14 @@ export default () => {
           </li>
 
           <li className="border-t md:border-none">
-            <Link
-              activeClassName="text-purple-450 dark:text-purple-400"
-              to="/resume/"
-              className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
+            <a 
+            href='https://resume.io/r/5vWttCoMY'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
             >
               Resume
-            </Link>
+            </a>
           </li>
 
           <li className="border-t md:border-none">

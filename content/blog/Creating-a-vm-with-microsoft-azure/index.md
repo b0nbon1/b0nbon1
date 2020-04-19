@@ -23,7 +23,7 @@ So I'm gonna guide you on how to set up a Windows virtual machine on your macOs 
 
 ## Setting Up the VM on Azure
 
-1. First register into [Microsoft Azure](https://azure.microsoft.com/en-us/free/), you don't have an account.
+1. First register into <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Microsoft Azure</a>, you don't have an account.
 
 <br/>
 
@@ -125,4 +125,4 @@ Now you can enjoy using a fast VM on your machine.
 
 > When the VM is not in Use don't forget to stop it, so as to save your credits.
 
-Hope your found this Article useful and Cheers 🥂!!
+Hope you found this Article useful, Cheers 🥂!!

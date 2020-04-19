@@ -1,11 +1,11 @@
 .style-mdx {
-
+  color: #36313d;
 }
 
 .style-mdx p {
   line-height: 1.6;
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 17px;
+  margin-top: 5px;
 }
 
 .style-mdx h1 {
@@ -19,33 +19,33 @@
 
 .style-mdx h2 {
   line-height: 1.6;
-  font-size: 25px;
+  font-size: 24px;
   margin-top: 2rem;
   font-weight: 600;
 }
 
 .style-mdx h3 {
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 2rem;
   font-weight: 600;
 }
 
 .style-mdx h4 {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.style-mdx h5 {
   line-height: 1.6;
   font-size: 18px;
   margin-top: 2rem;
   font-weight: 600;
 }
 
-.style-mdx h4 {
-  line-height: 1.6;
-  font-size: 16px;
-  margin-top: 2rem;
-  font-weight: 600;
-}
-
-.style-mdx h5 {
+.style-mdx h6 {
   line-height: 1.6;
   font-size: 14px;
   margin-top: 2rem;
@@ -99,6 +99,10 @@
 @media (prefers-color-scheme: dark) {
   .style-mdx blockquote:before {
     color: #718096;
+  }
+
+  .style-mdx {
+    color: #edf2f7;
   }
 
   .style-mdx blockquote {

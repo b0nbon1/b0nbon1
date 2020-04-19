@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bonvic Bundi`,
     siteUrl: `https://www.nyabuya.com`,
-    description: `Bonvic Bundi. Software Engineer based in Kigali, Rwanda. Mostly working with Javascript. Currently breaking stuff at Andela & Irembo.`,
+    description: `Bonvic Bundi. Software Engineer based in Kigali, Rwanda. Mostly working with Javascript. Currently actively looking for remote position.`,
     author: `@bonvic7`,
   },
   plugins: [
@@ -29,7 +29,12 @@ module.exports = {
               maxWidth: 970,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+            }
+          },
           `gatsby-remark-static-images`,
         ],
       },

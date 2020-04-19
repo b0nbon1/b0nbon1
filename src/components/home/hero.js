@@ -11,7 +11,7 @@ const Hero = () => {
         return ( 
         <div className = "min-h-screen" >
             <section className = "container-inner mx-auto flex flex-col justify-center text-center items-center min-h-3" >
-                <h1 className = "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black dark:text-white" > Web Designer, Software Developer &amp; Blogger </h1> 
+                <h1 className = "text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black dark:text-white" > Web Designer, Front-end Developer &amp; Blogger </h1> 
                 <h5 className = "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-light mb-10" > I code simple things, and I love what I do . </h5> 
                 <div className = 'block' >
                     <Profile />
@@ -27,7 +27,7 @@ const Hero = () => {
                             <div className = "pt-20" >
                                 <h1 className = 'font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-none sm:leading-tight md:leading-normal lg:leading-relaxed xl:leading-loose mb-4'> What 's up. I'm Bonvic, Nice to meet you </h1> 
                                 <p className = "font-light" >
-                                    I 'm a Full-stack developer and a writer, currently based in beautiful Kigali, Rwanda.
+                                    I 'm a creative Front-end developer  and a writer.
                                     I enjoy turning complex problems into simple, beautiful and intuitive.When I 'm not coding, tweeting or writing, you'
                                     ll find me watching movies, walking around the city or Reading books. 
                                 </p> 
@@ -74,9 +74,9 @@ const Hero = () => {
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> What I Pen down: </h2> 
                                 <p className = 'font-light'> Programming languages, Web frameworks, Designs, Random... </p> 
                                 <h2 className = 'font-normal text-purple-450 dark:text-purple-200 my-6'> blogs Stats: </h2> 
-                                <p className = 'font-light'> 1 year of writing </p> 
-                                <p className = 'font-light'> 1 posts </p> 
-                                <p className = 'font-light'> 1 topic </p> 
+                                <p className = 'font-light'>100+ readers</p> 
+                                <p className = 'font-light'> 3 posts </p> 
+                                <p className = 'font-light'> several topics </p> 
                                 {/* <p className = 'font-light'> 100 views </p> 
                                 <p className = 'font-light'> 300 likes </p>  */}
                             </div> 

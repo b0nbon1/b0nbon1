@@ -5,7 +5,7 @@
 }
 
 div.blog-card {
-  height: 25rem;
+  height: 27rem;
   @apply bg-gray-300 m-10;
   @apply shadow-xl;
   border-radius: .6rem;
@@ -14,7 +14,7 @@ div.blog-card {
 
 div.blog-card:hover {
   @apply shadow-2xl;
-  height: 24rem;
+  height: 26.9rem;
   cursor: pointer;
   transition: box-shadow .5s ease-in-out;
   -webkit-animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -42,8 +42,8 @@ div.blog-card:hover {
             transform: scaleX(1);
   }
   100% {
-    -webkit-transform: scaleX(1.1);
-            transform: scaleX(1.1);
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
   }
 }
 @keyframes scale-up-center {
@@ -52,27 +52,29 @@ div.blog-card:hover {
             transform: scaleX(1);
   }
   100% {
-    -webkit-transform: scaleX(1.1);
-            transform: scaleX(1.1);
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
   }
 }
 
+.blog-card .blog-card__body {
+  min-height: 19rem;
+  margin-top: -3rem;
+  @apply bg-gray-200 w-full;
+  border-radius: .6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
 .blog-card .blog-card__body .footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 3rem;
   @apply border-gray-300 border-t;
 }
 
-.blog-card .blog-card__body {
-  height: 16rem;
-  margin-top: -3rem;
-  @apply bg-gray-200 w-full;
-  border-radius: .6rem;
-  position: absolute;
-}
 
 div.blog-card:hover .blog-card__body {
   -webkit-animation: slide-fwd-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -85,8 +87,8 @@ div.blog-card:hover .blog-card__body {
             transform: translateZ(0) translateY(0);
   }
   100% {
-    -webkit-transform: translateZ(160px) translateY(-10px);
-            transform: translateZ(160px) translateY(-10px);
+    -webkit-transform: translateZ(160px) translateY(-5px);
+            transform: translateZ(160px) translateY(-5px);
   }
 }
 @keyframes slide-fwd-top {
@@ -95,8 +97,8 @@ div.blog-card:hover .blog-card__body {
             transform: translateZ(0) translateY(0);
   }
   100% {
-    -webkit-transform: translateZ(160px) translateY(-10px);
-            transform: translateZ(160px) translateY(-10px);
+    -webkit-transform: translateZ(160px) translateY(-5px);
+            transform: translateZ(160px) translateY(-5px);
   }
 }
 

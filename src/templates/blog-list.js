@@ -2,13 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from '../components/layouts/blogList'; 
 import Card from '../components/blog/blog-card';
+import SEO from '../components/seo';
 
 const BlogIndex = ({ data }) => {
   const { nodes: posts } = data.allMdx
 
   const Featured = () => {
     const article = posts.find((post) => post.frontmatter.featured === true);
-    console.log(article)
     if(article) {
       return (
       <div className={`min-h-72 w-full bg-${article.frontmatter.color}-300 flex flex-col md:flex-row justify-around items-center`}>
@@ -30,9 +30,10 @@ const BlogIndex = ({ data }) => {
   return (
     <div>
       <Layout>
-        <div className="mt-10">
+        <SEO title='Blog posts' />
+        <div>
           <Featured />
-          <div className="grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row gap-2 ml-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-rows gap-2 ml-4">
             {posts.map((post) => (
                 <div key={post.id}>
                   <Link to={post.fields.slug}>

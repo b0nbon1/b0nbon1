@@ -1,10 +1,14 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import "prismjs/themes/prism.css"
 import Footer from "../components/layouts/footer";
 import SEO from '../components/seo';
 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  require("../styles/vs-code-dark.css");
+} else {
+  require("../styles/vs-code.css");
+}
 
 export default function PageTemplate({ data: { mdx } }) {
 
