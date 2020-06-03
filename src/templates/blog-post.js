@@ -4,7 +4,9 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Footer from "../components/layouts/footer";
 import SEO from '../components/seo';
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+const windowGlobal = typeof window !== 'undefined' && window
+
+if (windowGlobal?.matchMedia && windowGlobal?.matchMedia('(prefers-color-scheme: dark)')?.matches) {
   require("../styles/vs-code-dark.css");
 } else {
   require("../styles/vs-code.css");
