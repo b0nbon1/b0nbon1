@@ -1,11 +1,12 @@
 ---
-title: Creating a Windows virtual machine using Azure and launch it on MacOs desktop remote
+title: Creating a Virtual Machine on Azure
 featured: true
 date: 2020-04-17 00:00:00 +0300
-description: Creating a windows vitrual machine using Microsoft Azure and launch it on desktop remote using MacOs.
+description: Creating a windows vitrual machine using Microsoft Azure and launch it on desktop remote using MacOs ~ Bonvic Bundi.
 img: ./cloud.svg
 tags: [ DevOps, Azure, VM, Microsoft, Cloud]
 color: gray
+bg: '#d9d7e0'
 ---
 
 

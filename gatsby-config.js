@@ -2,11 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Bonvic Bundi`,
     siteUrl: `https://www.nyabuya.com`,
-    description: `Bonvic Bundi. Software Engineer based in Kigali, Rwanda. Mostly working with Javascript. Currently actively looking for remote position.`,
+    description: `Bonvic Bundi Nyabuya.
+    I'm Bonvic Bundi Nyabuya, a software engineer based in Nairobi currently but loves working for remote companies. I'm currently looking for a remote work.`,
     author: `@bonvic7`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-nprogress`,

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "../images/logo";
 
-export default () => {
+export default ({ color }) => {
   return (
-    <header className="">
-      <nav className="nav h-16 flex flex-wrap items-center justify-between px-4">
+    <header className="w-11/12 mx-auto">
+      <nav className="nav h-20 flex flex-wrap items-center justify-between px-4">
         <div className="flex flex-no-shrink items-center">
           <Link className='logo' to="/">
             <Logo />
@@ -43,13 +44,14 @@ export default () => {
           </li>
 
           <li className="border-t md:border-none">
-            <Link
+            <AniLink
+              cover
               activeClassName="text-purple-450 dark:text-purple-400"
               to="/blog/"
               className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
             >
               Blog
-            </Link>
+            </AniLink>
           </li>
         </ul>
       </nav>
