@@ -1,35 +1,29 @@
-import { Link } from "gatsby"
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+// import React from "react"
 
-const Header = ({ siteTitle }) => (
+function Header({ siteTitle }) {
+  return (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    sx={styles.header}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+   <nav sx={styles.nav}>
+     <ul sx={styles.navLeft}>
+       <li>Logo</li>
+       <li>Blog</li>
+       <li>About</li>
+       <li>Contact</li>
+     </ul>
+     <ul sx={styles.navRight}>
+       <li>Search</li>
+       <li>Twitter</li>
+     </ul>
+   </nav>
   </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -40,3 +34,29 @@ Header.defaultProps = {
 }
 
 export default Header
+
+const styles = {
+  header: {
+    height: '6rem',
+    boxShadow: '0 2px 20px 0 rgba(0,0,0,0.1)',
+  },
+  nav: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  navLeft: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    flex: '1',
+  },
+  navRight: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+}
