@@ -16,7 +16,7 @@ const Card = ({ post, excerpt, read }) => {
   return (
     <div className="blog-card">
         <div className={`blog-card__image bg-${post.color}-300`}>
-            <img src={post.img.publicURL}  />
+            <img src={post.img.publicURL} alt={post.title}  />
         </div>
         <div className="blog-card__body">
           <div className='relative flex-grow'>

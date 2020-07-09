@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "../images/logo";
 
-export default () => {
+export default ({ color }) => {
   return (
-    <header className="">
-      <nav className="nav h-16 flex flex-wrap items-center justify-between px-4">
+    <header className="w-11/12 mx-auto">
+      <nav className="nav h-20 flex flex-wrap items-center justify-between px-4">
         <div className="flex flex-no-shrink items-center">
-          <Link className='logo' to="/">
+          <AniLink cover directionTo='right'  className='logo' to="/">
             <Logo />
-          </Link>
+          </AniLink>
         </div>
 
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
@@ -22,13 +22,14 @@ export default () => {
 
         <ul className="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
           <li className="border-t md:border-none">
-            <Link
+            <AniLink
+              cover
               to="/"
               activeClassName="text-purple-450 dark:text-purple-400"
               className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
             >
               Home
-            </Link>
+            </AniLink>
           </li>
 
           <li className="border-t md:border-none">
@@ -43,13 +44,14 @@ export default () => {
           </li>
 
           <li className="border-t md:border-none">
-            <Link
+            <AniLink
+              cover
               activeClassName="text-purple-450 dark:text-purple-400"
               to="/blog/"
               className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
             >
               Blog
-            </Link>
+            </AniLink>
           </li>
         </ul>
       </nav>

@@ -1,29 +1,27 @@
 ---
-title: Creating a Windows virtual machine using Azure and launch it on MacOs desktop remote
-featured: true
-date: 2020-04-17 00:00:00 +0300
-description: Creating a windows vitrual machine using Microsoft Azure and launch it on desktop remote using MacOs.
+title: Creating a Virtual Machine on Azure
+featured: false
+date: 2020-04-17 10:00:00 +0300
+description: Creating a vitrual machine on Microsoft Azure and launch it on desktop remote. ~ Bonvic Bundi.
 img: ./cloud.svg
 tags: [ DevOps, Azure, VM, Microsoft, Cloud]
 color: gray
+bg: '#e2e8f0'
 ---
-
-
-
-> Microsoft Azure offers great services and it has a free plan for the first 12 months. The free plan can help you learn and gain devops skills using Microsoft Azure.
-
-> Signup here for a free plan on [Microsoft Azure](https://azure.microsoft.com/en-us/free/) 
 
 ## The problem
 
 I wanted to do my google certifications exams but I had an issue, my latency tests were failing due to slow internet connection. My alternative was to look for a good remote virtual machine to help me work on my certificatons exams.
 
 After evaluating the options that were available online I decided to go with [Microsoft Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/). It has a free plan and provides what I need to get my exams done.
-So I'm gonna guide you on how to set up a Windows virtual machine on your macOs PC.
+So I'm gonna guide you on how to set up a Windows virtual machine on your PC.
+
+> Microsoft Azure offers great services and it has a free plan for the first 12 months. The free plan can help you learn and gain devops skills using Microsoft Azure. Signup here for a free plan on [Microsoft Azure](https://azure.microsoft.com/en-us/free/) 
+
 
 ## Setting Up the VM on Azure
 
-1. First register into <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Microsoft Azure</a>, you don't have an account.
+1. First register into <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Microsoft Azure</a>, if you don't have an account.
 
 <br/>
 
@@ -114,7 +112,7 @@ Click Connect and the choose RDP, this will provide a remote desktop access port
 
 4. Next double click on the created PC. It will start connecting to your VM
 5. If the certificate warning comes up you can click continue
-6. Viola! you have just created a Windows 10 VM on Azure and Run it on your macOs
+6. Viola! you have just created a Windows 10 VM on Azure and Run it on your pc
 <br/>
 
 ![Windows VM running](./Windows-running.png)

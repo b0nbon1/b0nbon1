@@ -191,7 +191,8 @@ module.exports = {
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       ram: ['"Rammetto One"', 'cursive'],
-      helvetica: ['Helvetica', 'Arial', 'sans-serif']
+      helvetica: ['Helvetica', 'Arial', 'sans-serif'],
+      mont: ['"Montserrat"', 'sans-serif'],
   },
   variants: {},
   plugins: [],
