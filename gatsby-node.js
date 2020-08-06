@@ -1,3 +1,6 @@
+require('react-app-polyfill/ie9');
+require('react-app-polyfill/stable');
+
 if (process.env.NODE_ENV === 'development') {
   process.env.GATSBY_WEBPACK_PUBLICPATH = '/'
 }
