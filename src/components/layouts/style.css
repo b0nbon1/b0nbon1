@@ -1,0 +1,144 @@
+:root {
+  --footer-height: 100px;
+  --menu-width: 20px;
+  --menu-height: calc(var(--menu-width)* .8);
+  --rectangle-height: calc(var(--menu-height)* .1);
+  --rectangle-radius: calc(var(--menu-width)* .04);
+  --translate: calc(var(--menu-width)* .17);
+  --transition: 0.4s;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+}
+
+.main::after {
+  content: '';
+  display: block;
+  height: var(--footer-height);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+/* header styles */
+.header {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo {
+  height: calc(var(--menu-width)*2);
+}
+
+.burger {
+  position: relative;
+  width: var(--menu-width);
+  height: var(--menu-height);
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  float: right;
+}
+
+.rectangle {
+  position: absolute;
+  height: var(--rectangle-height);
+  background: #ffffff;
+  border-radius: var(--rectangle-radius);
+  transition: transform var(--transition);
+}
+
+.rectangle--small {
+  width: calc(var(--menu-width)/2);
+}
+
+.rectangle--top {
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
+.rectangle--middle {
+  top: 50%;
+  left: 0;
+  width: var(--menu-width);
+  transform: translateY(-50%);
+}
+
+.rectangle--bottom {
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+}
+
+.box {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: calc(60vw);
+  height: calc(90vh - 30px);
+  border-radius: 33px;
+  background: #4a4a4a;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition-property: opacity, transform;
+  transition-duration: var(--transition);
+}
+
+.rectangle--top.open {
+  transform: translateX(var(--translate)) rotate(45deg);
+}
+
+.rectangle--middle.open {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.rectangle--bottom.open {
+  transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
+}
+
+.box.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 481px) {
+  :root {
+    --menu-width: 30px;
+  }
+  .header {
+    margin-top: 25px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  :root {
+    --menu-width: 35px;
+  }
+  .header {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 60%;
+  }
+}
