@@ -2,13 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Footer from "../components/layouts/footer";
+import Header from "../components/layouts/header";
 import SEO from '../components/seo';
 import "../styles/vs-code-dark.css"
 
 export default function PageTemplate({ data: { mdx } }) {
-  console.log(mdx.frontmatter)
   return (
     <div className="flex flex-col">
+      <Header />
       <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} />
       <div className="text-gray-700 dark:text-gray-100 mx-auto font-mont w-full">
         <div className={`min-h-72 w-full bg-${mdx.frontmatter.color}-300 flex flex-col md:flex-row justify-around items-center`}>

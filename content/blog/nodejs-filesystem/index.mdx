@@ -1,0 +1,37 @@
+---
+title: Read, Write, Update and Delete files in Node.js (File Systems)
+featured: True
+date: 2021-04-12 00:00:00 +0300
+description: Let's learn how to write files, read files, update files and delete files with Nodejs ~ Bonvic Bundi
+img: ./file-system.svg
+tags: [ Javascript, fs, Nodejs]
+color: orange
+bg: '#ffd280'
+---
+
+<br/>
+
+We use the `fs` module in Nodejs which allows you to work with the file systems on your computer.
+You just Nodejs installed on your computer because `fs` module is part of the Nodejs core.
+
+## Read Files
+
+You can readfiles from your nodejs application using `fs.readFile` anf `fs.readFileSync`(for synchronous form) methods.
+
+Examples for reading files:
+
+#### Synchronous example
+
+```js
+const fs = require('fs');
+
+try {
+  const fileFetched = fs.readFileSync('./');
+} catch (error) {
+  console.log(error)
+}
+
+```
+
+
+

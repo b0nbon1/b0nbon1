@@ -4,7 +4,7 @@ import Logo from "../images/logo";
 
 export default ({ color }) => {
   return (
-    <header className="w-11/12 mx-auto">
+    <header className="w-11/12 mx-auto bg-transparent">
       <nav className="nav h-20 flex flex-wrap items-center justify-between px-4">
         <div className="flex flex-no-shrink items-center">
           <AniLink cover directionTo='right'  className='logo' to="/">
@@ -32,7 +32,7 @@ export default ({ color }) => {
             </AniLink>
           </li>
 
-          <li className="border-t md:border-none">
+          {/* <li className="border-t md:border-none">
             <a 
             href='https://resume.io/r/5vWttCoMY'
             target="_blank"
@@ -41,7 +41,7 @@ export default ({ color }) => {
             >
               Resume
             </a>
-          </li>
+          </li> */}
 
           <li className="border-t md:border-none">
             <AniLink
@@ -50,7 +50,7 @@ export default ({ color }) => {
               to="/blog/"
               className="block md:inline-block px-4 py-3 no-underline dark:text-white hover:text-purple-450 dark:hover:text-purple-400 font-bold"
             >
-              Blog
+              Blogs
             </AniLink>
           </li>
         </ul>

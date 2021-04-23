@@ -21,12 +21,12 @@ export default () => {
           <button className="btn my-2 btn-transparent"><Link to='/'>Let's do this</Link></button>
         </div>
       </section>
-      <footer className="bg-purple-450 dark:bg-purple-700 text-gray-200 w-full relative z-10 font-sans">
+      <footer className="bg-grey-900 dark:bg-purple-700 text-gray-200 w-full relative z-10 font-sans">
         <div className="container-inner mx-auto">
-          <div className="flex flex-col items-center justify-center py-8 min-h-3 mt-32 md:mt-24">
+          <div className="flex flex-col items-center justify-center py-8 min-h-3 mt-24 md:mt-24">
             <div className='resize-footer-logo'><Logo /></div>
             <div className="md:w-1/3 text-center my-5 mx-auto">
-              <span className="font-thin text-2xl">
+              <span className="text-xl">
                 Living, learning & leveling up one day at a time.
               </span>
             </div>

@@ -1,6 +1,6 @@
 ---
 title: 'Part 1: Introduction to Webgl using Three.js'
-featured: True
+featured: false
 date: 2020-07-17 08:00:00 +0300
 description: This is first part of the article in a series about three.js and Webgl. Going to learn how to setup Threejs and also render our first 3D content to the DOM.. ~ Bonvic Bundi
 img: ./three.svg
