@@ -19,7 +19,7 @@ following: “What will happen as n approaches infinity?”
 
 The figure below shows some common Big-O notations:
 
-![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/z4bbf8o1ly77wmkjdgge.png)
+![big O graphs](https://thepracticaldev.s3.amazonaws.com/i/z4bbf8o1ly77wmkjdgge.png)
 
 ## Constant time (O(1))
 O(1) does not change with respect to input space. Hence, O(1) is referred to as being _constant time_.

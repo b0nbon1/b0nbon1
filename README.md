@@ -9,7 +9,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/b0nbon1](https://github.com/b0nbon1)
 
-- 📝 I regulary write articles on [https://bonvich.me/blog/](https://bonvich.me/blog/)
+- 📝 I regulary write articles on [https://bonvic.dev/blog/](https://bonvic.dev/blog/)
 
 - 💬 Ask me about **React, typescript, python and C++**
 
