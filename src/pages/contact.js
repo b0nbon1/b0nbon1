@@ -4,7 +4,7 @@ import Hero from "../components/home/hero";
 
 const Contact = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Home | Bonvic Bundi" />
     <Hero />
   </>
 )

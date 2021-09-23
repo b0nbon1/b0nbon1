@@ -23,9 +23,9 @@ const Card = ({ post, excerpt, read }) => {
             <h1 className="text-center font-bold px-5 py-3">
               { post.title }
             </h1>
-            {/* <p className="p-3 text-center font-light text-xs">
+            <p className="p-3 text-center font-light text-xs">
               { excerpt }
-            </p> */}
+            </p>
             <div className="p-3 text-center font-hairline text-xs text-gray-600 uppercase">
               { read } min read
             </div>
