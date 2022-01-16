@@ -3,9 +3,9 @@ import Layout from "../components/layout/Layout"
 
 const AboutPage = () => {
   return (
-    <main>
-      <Layout title="Now" />
-    </main>
+    <Layout title="Now">
+      <iframe src="https://open.spotify.com/embed/playlist/0RjxEOYd99Kcc1xas4FWt0" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </Layout>
   )
 }
 

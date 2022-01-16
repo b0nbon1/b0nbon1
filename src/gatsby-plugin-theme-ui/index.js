@@ -35,8 +35,8 @@ const theme = {
     },
   },
   fonts: {
-    body: 'monospace, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-    heading: "Georgia, serif",
+    body: 'Menlo, monospace, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
+    heading: "Menlo, monospace",
     monospace: "Menlo, monospace",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],

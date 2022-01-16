@@ -2,11 +2,11 @@
 import { jsx } from 'theme-ui'
 import { Global } from '@emotion/react'
 import Footer from "./Footer";
-import Header from "./Header";
 import Seo from "./seo";
+import BlogHeader from './BlogHeader';
 
 
-const Layout = ({ title, children }) => (
+const BlogLayout = ({ title, children, description }) => (
 <div>
   <Global
     styles={(theme) => ({
@@ -25,8 +25,8 @@ const Layout = ({ title, children }) => (
     width: ['90%', '80%', '70%'],
   }}
   >
-    <Header />
-      <Seo title={title} />
+    <BlogHeader />
+      <Seo title={title} description={description} />
       <main
         sx={{
           flexGrow: 1,
@@ -40,4 +40,4 @@ const Layout = ({ title, children }) => (
 </div>
 );
 
-export default Layout;
+export default BlogLayout;

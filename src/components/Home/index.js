@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { Heading, jsx, Paragraph } from 'theme-ui'
 
 const Astyle = {
-  color: '#fff',
+  color: 'var(--theme-ui-colors-textMuted)',
   ':hover': {
     color: 'var(--theme-ui-colors-text)'
   }
@@ -14,12 +14,13 @@ const Home = () => {
     <section sx={{
       alignItems: 'center',
       borderBottom: `2px dotted var(--theme-ui-colors-muted)`,
-      pb: 3
+      pb: 5,
+      mb: 4
     }}>
-      <Heading sx={{ mb: 10 }}>Bonvic Bundi</Heading>
-      <Heading sx={{ mb: 10 }} variant='h6'>Hi.</Heading>
+      <Heading sx={{ my: 2 }}>Bonvic Bundi</Heading>
+      <Heading sx={{ my: 4 }}>Hi.</Heading>
       <Paragraph sx={{ mb: 10 }}>
-        I 'm a Fullstack developer, ML enthusiast  and a blogger.
+        I 'm a Software engineer, ML enthusiast  and a blogger.
         I enjoy turning complex problems into simple, beautiful and intuitive.
       </Paragraph>
       <div sx={{ display: 'flex' }}>
