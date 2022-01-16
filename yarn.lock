@@ -5689,9 +5689,9 @@
     "yurnalist" "^2.1.0"
 
 "gatsby-core-utils@^3.4.0":
-  "integrity" "sha512-dYQpyo1BLGJzxQOXgGs1Fbj7jzGj5cKAIPYz2hz2l4Aus6skwjjaUlOjZlrWIahNHoLkx3mH0f5y6E8205T/aQ=="
-  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.4.0.tgz"
-  "version" "3.4.0"
+  "integrity" "sha512-qYjPUKULMcrcQyzY3BYKRFwBeI94Cxxm95ByNzYLT80QL0qZL4CapwLgCo1PyZPNd5IWByO8+nmZTcBR6hy0tQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.5.1.tgz"
+  "version" "3.5.1"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "ci-info" "2.0.0"
@@ -5699,6 +5699,7 @@
     "file-type" "^16.5.3"
     "fs-extra" "^10.0.0"
     "got" "^11.8.3"
+    "lock" "^1.1.0"
     "node-object-hash" "^2.3.10"
     "proper-lockfile" "^4.1.2"
     "tmp" "^0.2.1"
@@ -5980,6 +5981,15 @@
     "ws" "^7.3.0"
     "xstate" "^4.9.1"
     "yoga-layout-prebuilt" "^1.9.6"
+
+"gatsby-remark-prismjs@^6.5.0":
+  "integrity" "sha512-48UtIOiLWF37OHE6B2zTHflrJ5vcGLMHVaTXs0OwPc5eXyvGXe2BdWQrmvOWW+DQ0rd7HeUvlBxjnHohTjVP9Q=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "parse-numeric-range" "^1.2.0"
+    "unist-util-visit" "^2.0.3"
 
 "gatsby-source-filesystem@^4.0.0-next", "gatsby-source-filesystem@^4.4.0":
   "integrity" "sha512-tN+aJdOnBf92V9oHXaGzPB6gL0EhpYH0mh/dfszroy25CtSq07fZu8SynS/B3ClJVi22MkD0imcDVMlPJGSQ3w=="
@@ -7821,7 +7831,7 @@
   dependencies:
     "p-locate" "^4.1.0"
 
-"lock@^1.0.0":
+"lock@^1.0.0", "lock@^1.1.0":
   "integrity" "sha1-UxV0mdFlOxNspmRRBx/KYVcD+lU="
   "resolved" "https://registry.npmjs.org/lock/-/lock-1.1.0.tgz"
   "version" "1.1.0"
@@ -9065,6 +9075,11 @@
     "unist-util-modify-children" "^2.0.0"
     "unist-util-visit-children" "^1.0.0"
 
+"parse-numeric-range@^1.2.0":
+  "integrity" "sha512-twN+njEipszzlMJd4ONUYgSfZPDxgHhT9Ahed5uTigpQn90FggW4SA/AIPq/6a149fTbE9qBEcSwE3FAEp6wQQ=="
+  "resolved" "https://registry.npmjs.org/parse-numeric-range/-/parse-numeric-range-1.3.0.tgz"
+  "version" "1.3.0"
+
 "parse-path@^4.0.0":
   "integrity" "sha512-9Cepbp2asKnWTJ9x2kpw6Fe8y9JDbqwahGCTvklzd/cEq5C5JC59x2Xb0Kx+x0QZ8bvNquGO8/BWP0cwBHzSAA=="
   "resolved" "https://registry.npmjs.org/parse-path/-/parse-path-4.0.3.tgz"
@@ -9590,6 +9605,11 @@
     "ansi-regex" "^5.0.0"
     "ansi-styles" "^4.0.0"
     "react-is" "^16.12.0"
+
+"prismjs@^1.15.0", "prismjs@^1.26.0":
+  "integrity" "sha512-HUoH9C5Z3jKkl3UunCyiD5jwk0+Hz0fIgQ2nbwU2Oo/ceuTAQAg+pPVnfdt2TJWRVLcxKh9iuoYDUSc8clb5UQ=="
+  "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.26.0.tgz"
+  "version" "1.26.0"
 
 "probe-image-size@^6.0.0":
   "integrity" "sha512-99PZ5+RU4gqiTfK5ZDMDkZtn6eL4WlKfFyVJV7lFQvH3iGmQ85DqMTOdxorERO26LHkevR2qsxnHp0x/2UDJPA=="
@@ -11910,7 +11930,7 @@
   dependencies:
     "unist-util-visit-parents" "^2.0.0"
 
-"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2", "unist-util-visit@2.0.3":
+"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2", "unist-util-visit@^2.0.3", "unist-util-visit@2.0.3":
   "integrity" "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="
   "resolved" "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-2.0.3.tgz"
   "version" "2.0.3"

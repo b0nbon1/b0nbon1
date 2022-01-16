@@ -1,5 +1,4 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout/Layout"
 import Home from "../components/Home"
 import BlogSection from "../components/Home/blogSection"

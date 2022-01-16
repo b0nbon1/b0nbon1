@@ -17,6 +17,7 @@ const theme = {
         toggleIcon: "#cbd5e0",
         heading: "#fff",
         divide: "#2d3748",
+        blockquotebg: "#2d3748",
       },
       light: {
         text: "#2d3748",
@@ -31,6 +32,7 @@ const theme = {
         toggleIcon: "#2d3748",
         heading: "#000",
         divide: "#cbd5e0",
+        blockquotebg: "#f9f9f9"
       },
     },
   },
@@ -52,6 +54,44 @@ const theme = {
   letterSpacings: {
     body: "normal",
     caps: "0.2em",
+  },
+  styles: {
+    blockquote: {
+      background: 'var(--theme-ui-colors-blockquotebg)',
+      borderLeft: '10px solid var(--theme-ui-colors-textMuted)',
+      margin: '1.5em 10px',
+      padding: '0.5em 10px',
+      quotes: '"\\201C" "\\201D" "\\2018" "\\2019"',
+      "&:before": {
+        color: 'var(--theme-ui-colors-textMuted)',
+        content: 'open-quote',
+        fontSize: '4em',
+        lineHeight: '0.1em',
+        marginRight: '0.1em',
+        verticalAlign: '-0.4em',
+      },
+      "& p": {
+        display: 'inline',
+      }
+    },
+    a: {
+      color: '#0d96f2',
+      textDecoration: 'none',
+      "&:hover": {
+        textDecoration: 'underline',
+      },
+    },
+    ol: {
+      listStyle: 'decimal',
+      margin: '1rem 0 1rem 3rem',
+      fontSize: '18px',
+    },
+    ul: {
+      listTypeStyle: 'square',
+      margin: '1rem 0 1rem 3rem',
+      fontSize: '18px',
+    },
+    
   },
 };
 

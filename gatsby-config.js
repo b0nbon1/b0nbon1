@@ -30,7 +30,35 @@ module.exports = {
           icon: `src/images/Bonbon.png`,
       },
     },
-    "gatsby-plugin-mdx",
+    // "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          // {
+          //   resolve: `gatsby-remark-images`,
+          //   options: {
+          //     maxWidth: 970,
+          //   },
+          // },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: false,
+            }
+          },
+          // `gatsby-remark-static-images`,
+          // {
+          //   resolve:"@weknow/gatsby-remark-codepen",
+          //   options: {
+          //     theme: "dark",
+          //     height: 400
+          //   }
+          // }
+        ],
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
