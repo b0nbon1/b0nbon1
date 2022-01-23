@@ -24,7 +24,7 @@ const Home = () => {
         I enjoy turning complex problems into simple, beautiful and intuitive.
       </Paragraph>
       <div sx={{ display: 'flex' }}>
-        <Link sx={Astyle} to="/about">Now</Link>
+        <Link sx={Astyle} to="/now">Now</Link>
         <span sx={{ mx: 2 }}>|</span>
         <a sx={Astyle} href="https://github.com/b0nbon1">Github</a>
         <span sx={{ mx: 2 }}>|</span>

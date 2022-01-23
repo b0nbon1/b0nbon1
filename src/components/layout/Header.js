@@ -75,7 +75,7 @@ const Header = () => {
           }
         }} 
         activeStyle={{ color: 'var(--theme-ui-colors-text)'}}
-        to="/blogs">Writing</Link>
+        to="/writings">Writings</Link>
         <Link
         sx={{
           color: 'var(--theme-ui-colors-textMuted)',
@@ -85,7 +85,7 @@ const Header = () => {
           }
         }}
         activeStyle={{ color: 'var(--theme-ui-colors-text)'}}
-        to="/about">Now</Link>
+        to="/now">Now</Link>
       </div>
       <div>
         <Link
