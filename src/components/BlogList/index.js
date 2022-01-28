@@ -60,7 +60,7 @@ const BlogList = () => {
         }}
         key={post.id}
         >
-          <Link sx={BlogStyle} to={`/blog/${post.slug}`}>{post.frontmatter?.title}</Link>
+          <Link sx={BlogStyle} to={`/writings/${post.slug}`}>{post.frontmatter?.title}</Link>
           <div sx={{ mt: 2 }} />
           <Text sx={{ color: 'var(--theme-ui-colors-textMuted)'}}>{post.frontmatter?.date} &#8212; {post.frontmatter?.tags?.join(", ")}</Text>
         </li>
