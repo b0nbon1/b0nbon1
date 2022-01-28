@@ -8,8 +8,14 @@ import BlogLayout from "../components/layout/BlogLayout";
 export default function PageTemplate({ data: { mdx } }) {
   // const [colorMode] = useColorMode()
   require(`../styles/vs-code-dark.css`)
+  console.log(mdx)
   return (
-      <BlogLayout title={mdx.frontmatter.title} description={mdx.frontmatter.description}>
+      <BlogLayout
+        title={mdx.frontmatter.title}
+        description={mdx.frontmatter.description}
+        readTime={mdx.timeToRead}
+        date={mdx.frontmatter.date}
+      >
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </BlogLayout> 
   )
@@ -20,10 +26,12 @@ export const pageQuery = graphql`
       id
       body
       frontmatter {
-        title,
-        description,
-        tags,
+        title
+        description
+        tags
+        date(fromNow: true)
       }
+      timeToRead
     }
   }
 `

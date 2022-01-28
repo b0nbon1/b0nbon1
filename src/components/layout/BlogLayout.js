@@ -6,7 +6,7 @@ import Seo from "./seo";
 import BlogHeader from './BlogHeader';
 
 
-const BlogLayout = ({ title, children, description }) => (
+const BlogLayout = ({ title, children, description, date, readTime }) => (
 <div>
   <Global
     styles={(theme) => ({
@@ -25,7 +25,7 @@ const BlogLayout = ({ title, children, description }) => (
     width: ['90%', '80%', '70%'],
   }}
   >
-    <BlogHeader />
+    <BlogHeader title={title} date={date} readTime={readTime} />
       <Seo title={title} description={description} />
       <main
         sx={{

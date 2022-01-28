@@ -42,7 +42,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create post detail pages
   posts.forEach((node) => {
     createPage({
-      path: `/blog/${node.slug}`,
+      path: `/writings/${node.slug}`,
       component: blogPostTemplate,
       // You can use the values in this context in
       // our page layout component
