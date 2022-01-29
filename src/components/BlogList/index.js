@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import { Heading, jsx, Text } from 'theme-ui'
 
 const Astyle = {
@@ -27,7 +28,7 @@ const BlogList = () => {
         id
         slug
         frontmatter {
-          date(fromNow: true)
+          date
           title
           tags
         }
@@ -62,7 +63,7 @@ const BlogList = () => {
         >
           <Link sx={BlogStyle} to={`/writings/${post.slug}`}>{post.frontmatter?.title}</Link>
           <div sx={{ mt: 2 }} />
-          <Text sx={{ color: 'var(--theme-ui-colors-textMuted)'}}>{post.frontmatter?.date} &#8212; {post.frontmatter?.tags?.join(", ")}</Text>
+          <Text sx={{ color: 'var(--theme-ui-colors-textMuted)'}}>{formatDistanceToNow(new Date(post.frontmatter?.date))} &#8212; {post.frontmatter?.tags?.join(", ")}</Text>
         </li>
         ))}
       </ul>

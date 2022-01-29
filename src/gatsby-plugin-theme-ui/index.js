@@ -48,7 +48,7 @@ const theme = {
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
+    body: "32px",
     heading: 1.125,
   },
   letterSpacings: {
@@ -72,6 +72,9 @@ const theme = {
       },
       "& p": {
         display: 'inline',
+      },
+      "* .css-0": {
+        wordBreak: "break-word",
       }
     },
     a: {
@@ -91,7 +94,6 @@ const theme = {
       margin: '1rem 0 1rem 3rem',
       fontSize: '18px',
     },
-    
   },
 };
 

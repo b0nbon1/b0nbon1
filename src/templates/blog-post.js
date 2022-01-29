@@ -8,7 +8,6 @@ import BlogLayout from "../components/layout/BlogLayout";
 export default function PageTemplate({ data: { mdx } }) {
   // const [colorMode] = useColorMode()
   require(`../styles/vs-code-dark.css`)
-  console.log(mdx)
   return (
       <BlogLayout
         title={mdx.frontmatter.title}
@@ -29,7 +28,7 @@ export const pageQuery = graphql`
         title
         description
         tags
-        date(fromNow: true)
+        date
       }
       timeToRead
     }
