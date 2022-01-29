@@ -1,12 +1,10 @@
 ---
-title: 'Part 1: Introduction to Webgl using Three.js'
+title: 'Introduction to Webgl using Three.js'
 featured: false
 date: 2020-07-17 08:00:00 +0300
-description: This is first part of the article in a series about three.js and Webgl. Going to learn how to setup Threejs and also render our first 3D content to the DOM.. ~ Bonvic Bundi
-img: ./three.svg
+description: This is a soft introduction about three.js and Webgl. Going to learn how to setup Threejs and also render our first 3D content to the DOM.. ~ Bonvic Bundi
 tags: [ 3D, Webgl, Three.js, Javascript]
-color: purple
-bg: '#d9bae8'
+author: Bonvic Bundi
 ---
 
 # Introduction to Threejs
@@ -44,7 +42,7 @@ let's start by setting up the html file where we will render our 3D scene. we cr
 ```
 all of our three.js codes will go to `js/app.js`.
 
-### The Scene
+## The Scene
 A scene is the 3D space or stage containing all the objects we want to render. It allows you to set what is going to be rendered. This where you palce the objects, lights and cameras.
 
 ```js
@@ -166,7 +164,7 @@ light.position.set(10, 0, 25);
 scene.add(light);
 ```
 
-### Geometry
+## Geometry
 
 In order to get a long with 3D geometry on WEBGL we need to understand a little 3D modelling terminology.
 
@@ -215,13 +213,14 @@ results:
 https://codepen.io/b0nbon1/pen/bGEObyw
 
 
+
 ### Materials
 
 The [Three.js documentation](http://threejs.org/docs/) explains this in the most concise way: Materials describe the appearance of objects. Just like objects in real life, the material they are made out of determines how they appear in the 3D world. In the last post, we looked at how to create models/meshes with geometry. By applying a material to the mesh we can specify its color, texture, and how it reflects light.
 
 Let's take a look at a few materials that we can use to create our 3D objects, you can explore materials on three.js.
 
-###### MESHNORMALMATERIAL
+#### MESHNORMALMATERIAL
 
 The mesh normal material is not the most useful material because you have very little control over how the material appears. This is because the color of the planes of the mesh is dictated by their position. It does make some really pretty rainbow colored objects though so I really like it :) It's worth noting this material isn't effected by lighting.
 
@@ -229,7 +228,7 @@ The mesh normal material is not the most useful material because you have very l
 var material = new THREE.MeshNormalMaterial();
 ```
 
-###### MESHLAMBERTMATERIAL
+#### MESHLAMBERTMATERIAL
 
 The mesh lambert material is described as a non-shiny material, so I like to think of it is a matte-finish material. Like a matte plastic.
 
@@ -291,7 +290,7 @@ here is an example with a few animations on it:
 https://codepen.io/b0nbon1/pen/ZEQVEOR
 
 
-###### MESHPHONGMATERIAL
+#### MESHPHONGMATERIAL
 
 Now we can move on to the MeshPhongMaterial, or as I like to think of it, the fancy person's material. This material is pretty similar to the MeshLamberMaterial except its shiny, (ahhhhhh). Because they are similar you already know how to create a MeshPhongMaterial with a flat color or image texture because you do it the same way you did it with the lambert! Amazing! You're basically a level 12 3D mage now.
 
@@ -303,3 +302,89 @@ var material = new THREE.MeshPhongMaterial( {color: color.getHex()} );
 https://codepen.io/b0nbon1/pen/LYGMYxw
 
 See those flecks of light reflecting off of the mesh? That's because of the shinyness of this material. A couple of properties worth noting is the shinyness property (default of 30) which controls the level of shine, and the specular property which controls the color of that shine.
+
+Okay so you can do some pretty cool things with the MeshPhongMaterial but in my opinion the most fun part is being able to use a bump map. A bump map is a black and white map that creates perceived depth in your object when it is in lighting. This way you can create ridges and bumps in your mesh without having to complicate the geometry.
+
+```js
+var textureLoader = new THREE.TextureLoader();
+textureLoader.crossOrigin = true;
+textureLoader.load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/4268-bump.jpg', function(texture) {
+    // apply the texture as a bump map
+  var material = new THREE.MeshPhongMaterial( {color: color.getHex(), bumpMap: texture} );
+});
+```
+
+https://codepen.io/b0nbon1/pen/VwrvLRb
+
+Whaatt! After adding the bump map (a black and white image) to my material, it totally transforms the object to make it look like it has actual ridges. How cool is that!?! I will only accept "pretty darn cool" as an answer.
+
+
+## Animation
+
+Given we have direct control each of these properties, we can also animate them.
+This is actually part of the magic of 3D work for me, there are so many variables to animate in a scene, the potential combinations for animated effects are endless.
+
+### Animating a Three.js scene: the render loop.
+
+The key to animating your 3D scene is to create a render loop with a requestAnimationFrame function, and rendering your scene within the loop. This means any change you make to the scene will be immediately rendered, allowing you to animate by changing properties with tweens or your own JavaScript.
+
+```js
+// a render loop
+function render() {
+  requestAnimationFrame(render);
+  // render the scene
+  renderer.render(scene, camera);
+};
+```
+
+### Animating the scene's camera
+
+The animation possibilities in a 3D scene extend to animation of the camera that films that scene. By animating your camera you can really explore the 3D space you've set up.
+
+
+Here is my somewhat substandard attempt at creating a kind of "asteroid field" in space (3D art has never really been my strong point).
+
+
+https://codepen.io/b0nbon1/pen/MWOawMN
+
+This scene looks very static right now. You know what would make it better? If we jumped in a space ship and flew through the field, seeing the rocks fly past us. I don't have a space ship but I do have control over my scene camera, maybe I can animate it to seem like we're flying through the rocks.
+
+```js
+function updateCamPosition() {
+  // rotate our camera's position on the z/y axis
+  angle += 0.005;
+  var z = 100 * Math.cos(angle);
+  var y = 100 * Math.sin(angle);
+  camera.position.z = z;
+  camera.position.y = y;
+
+  /* rotate the camera so the angle it faces animates -
+   there's no exact science to this - I just picked a
+   random percentage of the z position */
+
+  camera.rotation.x = z*0.02;
+}
+```
+
+To make our scene even more dynamic, I'm going to rotate each of my space rock meshes.
+
+```js
+Rock.prototype.rotate = function() {
+  this.mesh.rotation.x += this.vr.x;
+  this.mesh.rotation.y += this.vr.y;
+}
+```
+
+And we're flying!!
+
+https://codepen.io/b0nbon1/pen/MWOaagg
+
+
+## Wrapping Up
+
+In future posts we'll look at how to animate particles, as well as incorporate user input in to animating our 3D scenes.
+But I hope these two examples have inspired you to think about what you'd like to animate in your 3D scenes.
+
+I know this is Long, please reach out to me on twitter at [@b0nvic](https://twitter.com/b0nvic)  if you want to be broken down.
+
+Thanks for reading, cheers 🥂
