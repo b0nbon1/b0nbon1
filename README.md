@@ -1,11 +1,9 @@
 <h1 align="center">Hi 👋, I'm Bonvic Bundi</h1>
-<h3 align="center">A passionate Software Engineer from Kenya</h3>
+<h3 align="center">A passionate Software Engineer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> </p>
 
-- 🔭 I’m currently working on [Algorithm And data structures](https://github.com/b0nbon1/Algorithms-DS)
-
-- 🌱 I’m currently learning **C++, typegraphql, threejs and webgl**
+- 🌱 I’m currently building a fun project, details coming soon
 
 - 👨‍💻 All of my projects are available at [https://github.com/b0nbon1](https://github.com/b0nbon1)
 
