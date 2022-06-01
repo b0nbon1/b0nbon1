@@ -63,7 +63,7 @@ const BlogSection = () => {
         >
           <Link sx={BlogStyle} to={`/writings/${post.slug}`}>{post.frontmatter?.title}</Link>
           <div sx={{ mt: 2 }} />
-          <Text sx={{ color: 'var(--theme-ui-colors-textMuted)'}}>{formatDistanceToNow(new Date(post.frontmatter?.date))} &#8212; {post.frontmatter?.tags?.join(", ")}</Text>
+          <Text sx={{ color: 'var(--theme-ui-colors-textMuted)'}}>{formatDistanceToNow(new Date(post.frontmatter?.date))} ago &#8212; {post.frontmatter?.tags?.join(", ")}</Text>
         </li>
         ))}
       </ul>
