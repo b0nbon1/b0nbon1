@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **React, typescript, python and C++**
 
-- 📫 How to reach me **nyabuyabonvic@gmail.com**
+- 📫 How to reach me **bundi.bonvic@gmail.com**
 
 <p align="left">
 <h3 align="left">Connect with me:</h3>
