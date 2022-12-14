@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Bonvic Bundi</h1>
 <h3 align="center">A passionate Software Engineer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> <img src="https://wakatime.com/badge/user/6e470c62-82d7-421e-bcea-80e635c667a4.svg" alt="wakatime" /></p>
 
 - 🌱 I’m currently building a fun project, details coming soon
 
