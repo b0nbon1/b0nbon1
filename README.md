@@ -1,15 +1,15 @@
 <h1 align="center">Hi 👋, I'm Bonvic Bundi</h1>
 <h3 align="center">A passionate Software Engineer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> <img src="https://wakatime.com/badge/user/6e470c62-82d7-421e-bcea-80e635c667a4.svg" alt="wakatime" /></p>
 
 - 🌱 I’m currently building a fun project, details coming soon
 
 - 👨‍💻 All of my projects are available at [https://github.com/b0nbon1](https://github.com/b0nbon1)
 
-- 📝 I regulary write articles on [https://bonvic.dev/blogs/](https://bonvich.netlify.app/writings/)
+- 📝 I regularly write articles on [https://bonvic.dev/blogs/](https://bonvich.netlify.app/writings/)
 
-- 💬 Ask me about **React, typescript, python and C++**
+- 💬 Ask me about **React, typescript, python and Golang**
 
 - 📫 How to reach me **bundi.bonvic@gmail.com**
 
