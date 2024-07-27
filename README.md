@@ -7,7 +7,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/b0nbon1](https://github.com/b0nbon1)
 
-- 📝 I regularly write articles on [https://bonvic.dev/blogs/](https://bonvich.netlify.app/writings/)
+- 📝 I regularly write articles on [https://bonvic.dev/blogs/](https://bonvic.dev/blog/)
 
 - 💬 Ask me about **React, typescript, python and Golang**
 
