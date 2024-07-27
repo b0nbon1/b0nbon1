@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="prose mb-10">
+  <h6 class="p-name"><span>Last Updated: </span> {{ site.Params.lastUpdated }}</h6>
+</div>
+<div class="prose prose-lead-mb-0 prose-a:text-slate-900 visited:prose-a:text-slate-900">
+  {{ with $.Site.GetPage "page" "about" }} {{ .Content }} {{ end }}
+</div>
+
+{{ if .Site.Menus.socials }}
+<div class="my-16">
+  <h3 class="mb-2 text-slate-900 font-medium">On the web</h3>
+
+  <ul class="flex space-x-4">
+    {{- range .Site.Menus.socials }}
+    <li>
+      <a href="{{ .URL }}" class="underline"> {{ .Name }} </a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }} {{- $numberOfPostsInHomePage := site.Params.numberOfPostsInHomePage }}
+{{- if ne $numberOfPostsInHomePage 0 }}
+<div class="my-24">
+  <h3 class="mb-4 text-slate-900 font-medium">Latest Posts</h3>
+
+  {{- $posts := .Site.RegularPages.ByDate.Reverse }} {{- if gt
+  $numberOfPostsInHomePage 0 }} {{ $posts = first $numberOfPostsInHomePage
+  $posts }} {{ end }}
+
+  <ul class="text-slate-800 space-y-2">
+    {{ range $posts }} {{ if .Date }}
+    <li class="flex">
+      <span class="shrink-0 grow-0 inline-block w-20 text-gray-500 tabular-nums">
+        {{ .Date.Format "02-2006" }}
+      </span>
+      <a href="{{ .RelPermalink }}" class="underline hover:no-underline">
+        {{ .LinkTitle }}
+      </a>
+    </li>
+    {{ end }} {{ end }}
+  </ul>
+</div>
+{{ end }} {{ end }}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="js-article-body prose prose-base prose-h1:mb-3">
+  <h1>{{ .Title }}</h1>
+
+  {{ if .Date }} {{ $dateMachine := .Date | time.Format
+  "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date | time.Format
+  ":date_long" }}
+  <div class="text-sm text-gray-700 font-semibold mb-4">
+    <time class="dt-published" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    <span> • {{ .ReadingTime }} min read</span>
+  </div>
+  {{ end }} {{ .Content }}
+  <div class="text-sm mt-8">
+    {{ if .Params.tags }}🏷&nbsp;{{ end }} {{ range $key, $value := .Params.tags
+    }}
+    <a href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub
+    (len $.Params.tags) 1) }} , {{ end }} {{ end }}
+  </div>
+</article>
+{{ end }}

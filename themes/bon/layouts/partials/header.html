@@ -1,0 +1,10 @@
+<div class="font-medium">
+  <a href="/" class="inline-block -ml-2 px-2 py-1 rounded-lg font-semibold hover:bg-gray-100 transition">{{ site.Title
+    }}</a>
+</div>
+
+<nav class="text-sm text-slate-600 font-medium space-x-4">
+  {{- range .Site.Menus.main }}
+  <a href="{{ .URL }}" class="underline hover:no-underline"> {{ .Name }} </a>
+  {{- end }}
+</nav>

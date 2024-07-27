@@ -1,0 +1,21 @@
+[
+    {
+      "year": "2024",
+      "reading": [
+        {
+          "title": "Design Data-Intensive Applications",
+          "author": "Martin Kleppmann",
+          "finishedOn": "2024-04-07",
+          "rating": 4
+        }
+      ],
+      "watching": [
+        {
+          "title": "The Ministry of Ungentlemanly Warfare",
+          "imdb": "tt5177120",
+          "finishedOn": "2024-07-25",
+          "rating": 4
+        }
+      ]
+    }
+  ]
