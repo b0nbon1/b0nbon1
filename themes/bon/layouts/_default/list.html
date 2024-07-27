@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="prose mb-10">
+  <h1>{{ .Title }}</h1>
+</div>
+
+{{ range (.Data.Pages.GroupByDate "2006") }}
+<section>
+  <h2 class="mb-3 text-base font-black">{{ .Key }}</h2>
+  <div class="mb-12">
+    {{ range .Pages }} {{ $dateMachine := .Date | time.Format
+    "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date | time.Format
+    ":date_long" }}
+    <article class="md:flex justify-between mb-1">
+      <h4>
+        <a href="{{ .RelPermalink }}" aria-label="{{ .LinkTitle }}"
+          class="text-gray-800 font-normal no-underline hover:underline">
+          {{ .LinkTitle }}
+        </a>
+      </h4>
+
+      <div class="mt-1 mb-6 sm:m-0 shrink-0">
+        <dl>
+          <dt class="sr-only">Published at</dt>
+          <dd>
+            <time aria-label="Published on March 09, 2024" class="text-gray-600 text-sm font-medium tabular-nums"
+              datetime="{{ $dateMachine }}">
+              {{ $dateHuman }}
+            </time>
+          </dd>
+        </dl>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }} {{ end }}

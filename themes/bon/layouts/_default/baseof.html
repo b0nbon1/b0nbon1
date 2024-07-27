@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="bg-white text-slate-900 relative font-sans selection:text-[#160404] selection:bg-[#fef4ad]">
+  <div class="container mx-auto max-w-2xl">
+    <header class="mt-8 mb-24 md:flex justify-between items-center px-4 md:px-0">
+      {{ partial "header.html" . }}
+    </header>
+    <main class="px-4 md:px-0">{{ block "main" . }}{{ end }}</main>
+    <footer class="text-sm text-center mt-20 mb-8 px-4 md:px-0">
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
+</body>
+
+</html>
