@@ -1,5 +1,5 @@
 ---
-author: Kelvin Wangonya
+author: Bonvic Bundi
 title: Resume
 ---
 
@@ -33,7 +33,7 @@ title: Resume
 
 ## Professional experience
 
-### February 2021 to now – Safaricom PLC (Nairobi, Kenya)
+### February 2021 to current –  Safaricom PLC (Nairobi, Kenya)
 
 **Senior Software Engineer**
 
