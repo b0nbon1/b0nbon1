@@ -20,7 +20,7 @@ title: Resume
 
 |            |                                                                                        |
 | ---------- | -------------------------------------------------------------------------------------- |
-| Languages  | Javascript(Profecient), Typescript(Profecient), Golang(Familiar), Java(Familiar), Rust(learning)                                 |
+| Languages  | Typescript(Profecient), Golang(Profecient), Java(Familiar), Rust(learning)                                 |
 | Frameworks | Nodejs, React, React-Native, Spring-boot, Django (and everything that comes with working with these frameworks) |
 | Databases  | Postgres & MySql (professionally), Sqlite & MongoDB (personal projects)                |
 
