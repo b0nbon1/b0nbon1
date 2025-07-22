@@ -7,6 +7,24 @@
           "author": "Martin Kleppmann",
           "finishedOn": "2024-04-07",
           "rating": 4
+        },
+        {
+          "title": "The Pragmatic Programmer",
+          "author": "Andrew Hunt",
+          "finishedOn": "2025-02-04",
+          "rating": 5
+        },
+        {
+          "title": "Big Little Fights",
+          "author": "Jackson Biko",
+          "finishedOn": "2025-07-13",
+          "rating": 3
+        },
+        {
+          "title": "Eleanor Oliphant is Completely Fine",
+          "author": "Gail Honeyman",
+          "finishedOn": "currently reading",
+          "rating": 4
         }
       ],
       "watching": [
@@ -21,6 +39,18 @@
           "imdb": "tt14998742",
           "finishedOn": "2024-07-25",
           "rating": 3
+        },
+        {
+          "title": "Nobody",
+          "imdb": "tt7888964",
+          "finishedOn": "2025-07-12",
+          "rating": 4
+        },
+        {
+          "title": "Smallville",
+          "imdb": "tt0279600",
+          "finishedOn": "currently watching",
+          "rating": 4
         }
       ]
     }

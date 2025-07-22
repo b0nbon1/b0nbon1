@@ -16,7 +16,7 @@ meta = "Bonvic's blog. | Software engineer. Mostly doing fullstack work with Typ
 author = "Bonvic Bundi"
 authorTitle = "Software Engineer"
 numberOfPostsInHomePage = 3
-lastUpdated = "September 19th, 2024"
+lastUpdated = "July 22nd, 2025"
 
 [[menus.main]]
 name = 'Home'

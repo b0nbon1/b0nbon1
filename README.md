@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://wakatime.com/@Bonvic"><img src="https://komarev.com/ghpvc/?username=b0nbon1" alt="b0nbon1" /> <img src="https://wakatime.com/badge/user/6e470c62-82d7-421e-bcea-80e635c667a4.svg" alt="wakatime" /></a></p>
 
-- 🌱 I’m currently building a fun project, an open-source video streaming application called [vidflux](https://github.com/b0nbon1/VidFlux) using React, Rust and Golang
+- 🌱 I've been working on [Stratal](https://github.com/b0nbon1/stratal), an open-source automation tool that processes tasks from YAML/JSON files with a dashboard for monitoring progress, full logging, scheduling capabilities, and retry mechanisms - built using Golang and TypeScript
 
 - 👨‍💻 All of my projects are available at [https://github.com/b0nbon1](https://github.com/b0nbon1)
 

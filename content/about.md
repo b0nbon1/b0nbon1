@@ -5,7 +5,7 @@ title: About
 
 I'm a software engineer with a wide range of skills, constantly learning something new every day. I enjoy turning complex problems into simple, beautiful and intuitive.
 
-I'm currently working at [Safarciom][safaricom] as a Fullstack Engineer - a telemecomunication company.
+I'm currently working on [Stratal.io][stratal] an automation tool for everyone.
 
 My current day-to-day at work involves:
 
@@ -20,6 +20,6 @@ Sometimes I [write][blog] about stuff I've learned, personal projects, and anyth
 
 [resume]: /resume
 [blog]: /blog
-[safaricom]: https://safaricom.com/
+[stratal]: https://github.com/b0nbon1/stratal
 [github]: https://github.com/b0nbon1
 [linkedin]: https://www.linkedin.com/in/bonvic-bundi/
