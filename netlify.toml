@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "npm install -g tailwindcss@latest && tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify"
+command = "npx tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.116.0"
@@ -9,7 +9,7 @@ HUGO_ENABLEGITINFO = "true"
 NODE_VERSION = "22"
 
 [context.split1]
-command = "npm install -g tailwindcss@latest && tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify --enableGitInfo"
+command = "npx tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify --enableGitInfo"
 
 [context.split1.environment]
 HUGO_VERSION = "0.116.0"
@@ -17,14 +17,14 @@ HUGO_ENV = "production"
 NODE_VERSION = "22"
 
 [context.deploy-preview]
-command = "npm install -g tailwindcss@latest && tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "npx tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.116.0"
 NODE_VERSION = "22"
 
 [context.branch-deploy]
-command = "npm install -g tailwindcss@latest && tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "npx tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify && hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.116.0"
