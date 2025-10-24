@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="js-article-body prose prose-base prose-h1:mb-3">
-  <h1>{{ .Title }}</h1>
+  <h1 class="text-3xl font-bold tracking-tight mb-4">{{ .Title }}</h1>
 
   {{ if .Date }} {{ $dateMachine := .Date | time.Format
   "2006-01-02T15:04:05-07:00" }} {{ $dateHuman := .Date | time.Format
@@ -9,12 +9,23 @@
     <time class="dt-published" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     <span> • {{ .ReadingTime }} min read</span>
   </div>
-  {{ end }} {{ .Content }}
+  {{ end }}
+
+  {{ .Content }}
+  
   <div class="text-sm mt-8">
     {{ if .Params.tags }}🏷&nbsp;{{ end }} {{ range $key, $value := .Params.tags
     }}
     <a href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub
     (len $.Params.tags) 1) }} , {{ end }} {{ end }}
+    
+    {{ if .Params.series }}
+      {{ if .Params.tags }}<span class="mx-2">•</span>{{ end }}
+      📚&nbsp;{{ range $key, $value := .Params.series }}
+      <a href="/series/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub
+      (len $.Params.series) 1) }} , {{ end }} {{ end }}
+    {{ end }}
   </div>
+  {{ partial "series-nav.html" . }}
 </article>
 {{ end }}

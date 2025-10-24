@@ -1,10 +1,12 @@
-<div class="font-medium">
-  <a href="/" class="inline-block -ml-2 px-2 py-1 rounded-lg font-semibold hover:bg-gray-100 transition">{{ site.Title
-    }}</a>
-</div>
+<div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+  <div class="font-medium">
+    <a href="/" class="inline-block -ml-2 px-2 py-1 rounded-lg font-semibold hover:bg-gray-100 transition no-underline">{{ site.Title
+      }}</a>
+  </div>
 
-<nav class="text-sm text-slate-600 font-medium space-x-4">
-  {{- range .Site.Menus.main }}
-  <a href="{{ .URL }}" class="underline hover:no-underline"> {{ .Name }} </a>
-  {{- end }}
-</nav>
+  <nav class="text-sm text-slate-600 font-medium flex flex-wrap gap-x-4 gap-y-2">
+    {{- range .Site.Menus.main }}
+    <a href="{{ .URL }}" class="underline hover:no-underline whitespace-nowrap"> {{ .Name }} </a>
+    {{- end }}
+  </nav>
+</div>
