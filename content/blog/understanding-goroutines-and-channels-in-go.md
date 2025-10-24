@@ -705,3 +705,5 @@ Worker pools are both efficient and scalable, they balance workload among multip
 You've now covered the entire Go concurrency foundation. Goroutines give you lightweight concurrent functions that are easy to spawn and manage. Channels provide safe data communication between goroutines without shared memory pitfalls. Buffered channels act as async message queues for better performance. Directional channels and closing mechanisms enable safe signaling patterns. The `select` statement allows handling multiple channels simultaneously. And worker pools bring it all together in a real-world concurrency pattern you'll use regularly.
 
 With these tools, you're ready to build concurrent applications that are fast, safe, and maintainable. Go's approach to concurrency might feel different at first, but once you embrace these patterns, you'll find them far simpler than traditional threading models. Start small, experiment with these examples, and gradually build more complex concurrent systems. The key is to think in terms of communicating goroutines rather than shared state, and let channels do the heavy lifting of coordination.
+
+Thanks for reading, cheers 🥂
