@@ -1,0 +1,12 @@
+{
+  "name": "bonvic-blog",
+  "version": "1.0.0",
+  "description": "Bonvic's personal blog built with Hugo and Tailwind CSS",
+  "scripts": {
+    "build:css": "tailwindcss -i themes/bon/assets/css/main.css -o themes/bon/assets/css/output.css --minify",
+    "build": "npm run build:css && hugo --gc --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.0"
+  }
+}
