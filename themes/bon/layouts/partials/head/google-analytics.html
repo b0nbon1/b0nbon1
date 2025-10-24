@@ -5,5 +5,66 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-E6WC2YE7M3');
+  // Configure GA4 with enhanced measurement
+  gtag('config', 'G-E6WC2YE7M3', {
+    'send_page_view': true,
+    'page_title': document.title,
+    'page_location': window.location.href,
+    'page_path': window.location.pathname
+  });
+
+  // Track time on page
+  let startTime = Date.now();
+  let lastActivityTime = Date.now();
+  let isActive = true;
+
+  // Update last activity time on user interaction
+  ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'].forEach(function(event) {
+    document.addEventListener(event, function() {
+      lastActivityTime = Date.now();
+      isActive = true;
+    }, true);
+  });
+
+  // Track page visibility
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      isActive = false;
+      sendTimeOnPage();
+    } else {
+      lastActivityTime = Date.now();
+      isActive = true;
+    }
+  });
+
+  // Send time on page data
+  function sendTimeOnPage() {
+    const timeSpent = Math.round((lastActivityTime - startTime) / 1000); // in seconds
+    if (timeSpent > 0) {
+      gtag('event', 'time_on_page', {
+        'event_category': 'engagement',
+        'event_label': document.title,
+        'value': timeSpent,
+        'page_path': window.location.pathname
+      });
+    }
+  }
+
+  // Send time data before user leaves
+  window.addEventListener('beforeunload', function() {
+    sendTimeOnPage();
+  });
+
+  // Send periodic updates every 30 seconds if user is active
+  setInterval(function() {
+    if (isActive && (Date.now() - lastActivityTime) < 30000) {
+      const timeSpent = Math.round((Date.now() - startTime) / 1000);
+      gtag('event', 'user_engagement', {
+        'event_category': 'engagement',
+        'event_label': document.title,
+        'value': timeSpent,
+        'page_path': window.location.pathname
+      });
+    }
+  }, 30000);
 </script>
