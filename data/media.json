@@ -49,8 +49,14 @@
         {
           "title": "Smallville",
           "imdb": "tt0279600",
-          "finishedOn": "currently watching",
+          "finishedOn": "2025-07-20",
           "rating": 4
+        },
+        {
+          "title": "Merlin",
+          "imdb": "tt0280387",
+          "finishedOn": "currently watching",
+          "rating": 3
         }
       ]
     }

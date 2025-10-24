@@ -24,35 +24,35 @@
     {{ $nextPost = index $seriesPosts (add $currentIndex 1) }}
   {{ end }}
   
-  <div class="series-navigation border border-gray-200 rounded-lg p-6 my-8 bg-gray-50">
+  <div class="series-navigation border border-border rounded-lg p-6 my-8 bg-surface">
     <div class="series-header mb-4">
-      <h3 class="text-lg font-semibold text-gray-900 mb-2">
-        📚 Part of Series: <a href="/series/{{ $seriesName | urlize }}" class="text-blue-600 hover:text-blue-800 underline">{{ $seriesName | title }}</a>
+      <h3 class="text-lg font-semibold text-text-primary mb-2">
+        📚 Part of Series: <a href="/series/{{ $seriesName | urlize }}" class="text-accent hover:text-accent-hover underline">{{ $seriesName | title }}</a>
       </h3>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-text-secondary">
         Part {{ add $currentIndex 1 }} of {{ len $seriesPosts }}
       </p>
     </div>
-    
+
     {{/* Series progress bar */}}
     <div class="series-progress mb-4">
-      <div class="w-full bg-gray-200 rounded-full h-2">
-        <div class="bg-blue-600 h-2 rounded-full" style="width: {{ div (mul (add $currentIndex 1) 100) (len $seriesPosts) }}%"></div>
+      <div class="w-full bg-border rounded-full h-2">
+        <div class="bg-accent h-2 rounded-full" style="width: {{ div (mul (add $currentIndex 1) 100) (len $seriesPosts) }}%"></div>
       </div>
     </div>
-    
+
     {{/* Navigation buttons */}}
     <div class="series-nav-buttons flex justify-between items-center mb-4">
       <div class="prev-post">
         {{ if $prevPost }}
-          <a href="{{ $prevPost.RelPermalink }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-900">
+          <a href="{{ $prevPost.RelPermalink }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-secondary bg-background border border-border rounded-md hover:bg-surface-hover hover:text-text-primary">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
             Previous: {{ $prevPost.Title | truncate 30 }}
           </a>
         {{ else }}
-          <span class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 border border-gray-200 rounded-md cursor-not-allowed">
+          <span class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-muted bg-surface border border-border rounded-md cursor-not-allowed">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
@@ -63,14 +63,14 @@
       
       <div class="next-post mx-2">
         {{ if $nextPost }}
-          <a href="{{ $nextPost.RelPermalink }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
+          <a href="{{ $nextPost.RelPermalink }}" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-accent border border-transparent rounded-md hover:bg-accent-hover">
             Next: {{ $nextPost.Title | truncate 30 }}
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
         {{ else }}
-          <span class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 border border-gray-200 rounded-md cursor-not-allowed">
+          <span class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-muted bg-surface border border-border rounded-md cursor-not-allowed">
             Last Post
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -79,27 +79,27 @@
         {{ end }}
       </div>
     </div>
-    
+
     {{/* Series table of contents */}}
     <details class="series-toc">
-      <summary class="cursor-pointer font-medium text-gray-700 hover:text-gray-900 mb-2">
+      <summary class="cursor-pointer font-medium text-text-secondary hover:text-text-primary mb-2">
         📋 View All Posts in This Series
       </summary>
       <div class="mt-3">
         <ol class="space-y-2">
           {{ range $index, $post := $seriesPosts }}
             <li class="flex items-start">
-              <span class="flex-shrink-0 w-6 h-6 rounded-full {{ if eq $post.RelPermalink $.RelPermalink }}bg-blue-600 text-white{{ else }}bg-gray-200 text-gray-600{{ end }} flex items-center justify-center text-xs font-medium mr-3 mt-0.5">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full {{ if eq $post.RelPermalink $.RelPermalink }}bg-accent text-white{{ else }}bg-border text-text-secondary{{ end }} flex items-center justify-center text-xs font-medium mr-3 mt-0.5">
                 {{ add $index 1 }}
               </span>
               <div class="min-w-0 flex-1">
                 {{ if eq $post.RelPermalink $.RelPermalink }}
-                  <span class="text-blue-600 font-medium">{{ $post.Title }} (Current)</span>
+                  <span class="text-accent font-medium">{{ $post.Title }} (Current)</span>
                 {{ else }}
-                  <a href="{{ $post.RelPermalink }}" class="text-gray-700 hover:text-gray-900 hover:underline">{{ $post.Title }}</a>
+                  <a href="{{ $post.RelPermalink }}" class="text-text-secondary hover:text-text-primary hover:underline">{{ $post.Title }}</a>
                 {{ end }}
                 {{ if $post.Params.description }}
-                  <p class="text-sm text-gray-500 mt-1">{{ $post.Params.description | truncate 100 }}</p>
+                  <p class="text-sm text-text-muted mt-1">{{ $post.Params.description | truncate 100 }}</p>
                 {{ end }}
               </div>
             </li>

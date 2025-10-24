@@ -12,3 +12,5 @@ echo "🏗️  Building Hugo site..."
 hugo --gc --minify
 
 echo "✅ Build complete! Site is in ./public/"
+
+

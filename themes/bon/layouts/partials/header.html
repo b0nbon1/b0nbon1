@@ -1,12 +1,24 @@
-<div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-  <div class="font-medium">
-    <a href="/" class="inline-block -ml-2 px-2 py-1 rounded-lg font-semibold hover:bg-gray-100 transition no-underline">{{ site.Title
-      }}</a>
+<div class="w-full flex flex-row justify-between items-center gap-3">
+  <div class="font-medium flex-shrink-0">
+    <a href="/" class="inline-block -ml-2 px-2 py-1 rounded-lg font-semibold header-hover no-underline">
+      <span class="hidden sm:inline">{{ site.Title }}</span>
+      <span class="sm:hidden">Bonvic</span>
+    </a>
   </div>
 
-  <nav class="text-sm text-slate-600 font-medium flex flex-wrap gap-x-4 gap-y-2">
-    {{- range .Site.Menus.main }}
-    <a href="{{ .URL }}" class="underline hover:no-underline whitespace-nowrap"> {{ .Name }} </a>
-    {{- end }}
-  </nav>
+  <div class="flex items-center gap-3 min-w-0">
+    <nav class="text-sm text-slate-600 dark:text-slate-400 font-medium flex flex-row flex-nowrap gap-x-3 gap-y-2 min-w-0">
+      {{- range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="underline hover:no-underline whitespace-nowrap"> {{ .Name }} </a>
+      {{- end }}
+    </nav>
+
+    <button
+      id="theme-toggle"
+      class="text-xl px-2 py-1 rounded-lg header-hover cursor-pointer border-0 bg-transparent no-underline flex-shrink-0"
+      aria-label="Toggle theme"
+      title="Toggle theme">
+      ☀️
+    </button>
+  </div>
 </div>

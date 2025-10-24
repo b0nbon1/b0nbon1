@@ -26,7 +26,7 @@ We can read files a non-blocking asynchronously by `fs.readFile` or in synchrono
 
 syntax for `readFileSync` is:
 
-```
+```js
 fs.readFileSync( path, options )
 ```
 

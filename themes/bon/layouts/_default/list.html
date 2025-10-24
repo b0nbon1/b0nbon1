@@ -14,14 +14,14 @@
       <div class="flex-1">
         <h4>
           <a href="{{ .RelPermalink }}" aria-label="{{ .LinkTitle }}"
-            class="text-gray-800 font-normal no-underline hover:underline">
+            class="text-text-primary font-normal no-underline hover:underline">
             {{ .LinkTitle }}
           </a>
         </h4>
         {{ if .Params.series }}
-          <div class="text-xs text-gray-500 mt-1">
-            📚 Part {{ .Params.series_order | default "?" }} of 
-            <a href="/series/{{ index .Params.series 0 | urlize }}" class="text-blue-600 hover:underline">
+          <div class="text-xs text-text-muted mt-1">
+            📚 Part {{ .Params.series_order | default "?" }} of
+            <a href="/series/{{ index .Params.series 0 | urlize }}" class="text-accent hover:underline">
               {{ index .Params.series 0 | title }}
             </a>
           </div>
@@ -32,7 +32,7 @@
         <dl>
           <dt class="sr-only">Published at</dt>
           <dd>
-            <time aria-label="Published on March 09, 2024" class="text-gray-600 text-sm font-medium tabular-nums"
+            <time aria-label="Published on March 09, 2024" class="text-text-secondary text-sm font-medium tabular-nums"
               datetime="{{ $dateMachine }}">
               {{ $dateHuman }}
             </time>

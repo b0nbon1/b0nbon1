@@ -16,7 +16,7 @@ meta = "Bonvic's blog. | Software engineer. Mostly doing fullstack work with Typ
 author = "Bonvic Bundi"
 authorTitle = "Software Engineer"
 numberOfPostsInHomePage = 3
-lastUpdated = "July 22nd, 2025"
+lastUpdated = "October 24th, 2025"
 
 [params.utterances]
 repo = "b0nbon1/b0nbon1"  # Replace with your GitHub username/repo (e.g., "b0nbon1/blog-comments")
@@ -25,24 +25,20 @@ label = "💬 comment"       # Label for GitHub issues
 theme = "github-light"     # Options: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark
 
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 1
-
 [[menus.main]]
 name = 'Blog'
 pageRef = '/blog'
-weight = 2
+weight = 1
 
 [[menus.main]]
 name = 'Reading'
 pageRef = '/reading'
-weight = 3
+weight = 2
 
 [[menus.main]]
 name = 'Watching'
 pageRef = '/watching'
-weight = 4
+weight = 3
 
 [[menus.socials]]
 name = "Github"
@@ -88,7 +84,12 @@ min = "0.116.0"
 
 [markup]
 [markup.highlight]
-style = "borland"
+style = "monokai"
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+tabWidth = 2
+guessSyntax = true
 [markup.goldmark.renderer]
 unsafe = true
 
