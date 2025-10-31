@@ -15,8 +15,8 @@ about = "Software engineer. Mostly doing backend work with Python."
 meta = "Bonvic's blog. | Software engineer. Mostly doing fullstack work with Typescript and Golang."
 author = "Bonvic Bundi"
 authorTitle = "Software Engineer"
-numberOfPostsInHomePage = 3
-lastUpdated = "October 24th, 2025"
+numberOfPostsInHomePage = 5
+lastUpdated = "October 31th, 2025"
 
 [params.utterances]
 repo = "b0nbon1/b0nbon1"  # Replace with your GitHub username/repo (e.g., "b0nbon1/blog-comments")

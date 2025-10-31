@@ -10,6 +10,7 @@ I'm currently working on [Stratal.io][stratal] an automation tool for everyone.
 My current day-to-day at work involves:
 
 - maintaining and refactoring a large legacy Nextjs Code.
+- Learning system design and also Backend engineering heavily
 - building all the newer parts of the codebase in Golang and newer Nextjs version
 - Building tools for automation using Typescript and Golang.
 - some frontend work (Nextjs, Typescript)

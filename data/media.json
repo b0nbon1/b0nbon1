@@ -1,45 +1,33 @@
 [
-    {
-      "year": "2024",
+  {
+      "year": "2025",
       "reading": [
-        {
-          "title": "Design Data-Intensive Applications",
-          "author": "Martin Kleppmann",
-          "finishedOn": "2024-04-07",
-          "rating": 4
-        },
-        {
-          "title": "The Pragmatic Programmer",
-          "author": "Andrew Hunt",
-          "finishedOn": "2025-02-04",
-          "rating": 5
-        },
         {
           "title": "Big Little Fights",
           "author": "Jackson Biko",
           "finishedOn": "2025-07-13",
-          "rating": 3
+          "rating": 4
         },
         {
           "title": "Eleanor Oliphant is Completely Fine",
           "author": "Gail Honeyman",
-          "finishedOn": "currently reading",
+          "finishedOn": "2025-08-30",
           "rating": 4
+        },
+        {
+          "title": "13 reasons why",
+          "author": "Jay Asher",
+          "finishedOn": "2025-09-15",
+          "rating": 4
+        },
+        {
+          "title": "System Design Interview – An Insider's Guide",
+          "author": "Alex Xu",
+          "finishedOn": "currently reading",
+          "rating": 5
         }
       ],
       "watching": [
-        {
-          "title": "The Ministry of Ungentlemanly Warfare",
-          "imdb": "tt5177120",
-          "finishedOn": "2024-07-25",
-          "rating": 4
-        },
-        {
-          "title": "Rebel Moon",
-          "imdb": "tt14998742",
-          "finishedOn": "2024-07-25",
-          "rating": 3
-        },
         {
           "title": "Nobody",
           "imdb": "tt7888964",
@@ -54,8 +42,39 @@
         },
         {
           "title": "Merlin",
-          "imdb": "tt0280387",
-          "finishedOn": "currently watching",
+          "imdb": "tt1199099",
+          "finishedOn": "2025-10-15",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "reading": [
+        {
+          "title": "Design Data-Intensive Applications",
+          "author": "Martin Kleppmann",
+          "finishedOn": "2024-04-07",
+          "rating": 3
+        },
+        {
+          "title": "The Pragmatic Programmer",
+          "author": "Andrew Hunt",
+          "finishedOn": "2025-02-04",
+          "rating": 5
+        }
+      ],
+      "watching": [
+        {
+          "title": "The Ministry of Ungentlemanly Warfare",
+          "imdb": "tt5177120",
+          "finishedOn": "2024-07-25",
+          "rating": 4
+        },
+        {
+          "title": "Rebel Moon",
+          "imdb": "tt14998742",
+          "finishedOn": "2024-07-25",
           "rating": 3
         }
       ]
