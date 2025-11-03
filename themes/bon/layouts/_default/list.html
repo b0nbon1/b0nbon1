@@ -18,14 +18,14 @@
             {{ .LinkTitle }}
           </a>
         </h4>
-        {{ if .Params.series }}
+        {{/* {{ if .Params.series }}
           <div class="text-xs text-text-muted mt-1">
             📚 Part {{ .Params.series_order | default "?" }} of
             <a href="/series/{{ index .Params.series 0 | urlize }}" class="text-accent hover:underline">
               {{ index .Params.series 0 | title }}
             </a>
           </div>
-        {{ end }}
+        {{ end }} */}}
       </div>
 
       <div class="mt-1 mb-6 sm:m-0 shrink-0">
