@@ -1,12 +1,14 @@
 ---
-title: "ACID Database Properties with Postgresql: Part 1 - Transactions"
+title: "ACID Database Properties with PostgreSQL: Part 1 - Transactions"
 date: 2025-11-03T10:00:00+03:00
-description: "Understanding PostgreSQL Transactions before we explore ACID properties"
-tags: ["Database", "ACID", "Atomicity", "Transactions", "Postgresql"]
+description: "Understanding Transactions with PostgreSQL before we explore ACID properties"
+tags: ["Database", "ACID", "Atomicity", "Transactions", "PostgreSQL"]
 series: ["ACID Database Properties"]
 series_order: 1
 author: "Bonvic Bundi"
 ---
+
+> Welcome to my comprehensive series on ACID database properties! In this first part, we'll dive deep into **Transactions** before we get into the properties.
 
 Every day, we deal with transactions, even outside of databases. When you send money, order food online, or post something on social media, a transaction takes place. It’s a simple idea: either everything works, or nothing changes(all-or-nothing). You wouldn’t want your account to be charged if your payment fails halfway, right? That’s exactly why databases use transactions — to make sure operations happen completely and reliably.
 
@@ -64,7 +66,6 @@ You can think of it like spring cleaning:
 Freezing ensures ancient data stays safe forever. This balance between MVCC (creating versions) and VACUUM (cleaning them up) keeps PostgreSQL efficient and stable.
 
 ## Wrapping It All Together
-
 So, here’s the full picture:
 1. **Transactions** group multiple changes into one reliable action.
 2. **PostgreSQL** gives each transaction a unique ID and records its work in the WAL for durability.

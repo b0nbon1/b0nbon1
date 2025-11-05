@@ -19,14 +19,14 @@
     <a href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub
     (len $.Params.tags) 1) }} , {{ end }} {{ end }}
     
-    {{/* {{ if .Params.series }}
+    {{ if .Params.series }}
       {{ if .Params.tags }}<span class="mx-2">•</span>{{ end }}
       📚&nbsp;{{ range $key, $value := .Params.series }}
       <a href="/series/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub
       (len $.Params.series) 1) }} , {{ end }} {{ end }}
-    {{ end }} */}}
+    {{ end }}
   </div>
-  {{/* {{ partial "series-nav.html" . }} */}}
+  {{ partial "series-nav.html" . }}
 </article>
 
 {{ partial "comments.html" . }}
