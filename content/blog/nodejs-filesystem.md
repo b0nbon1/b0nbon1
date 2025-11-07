@@ -206,7 +206,7 @@ fs.unlink(path, (err) => {
 ## Wrapping up
 
 Volla, we have successfully create, read, updated and delete the files successfully using Nodejs.
-Learn the difference between [Asynchronous and Synchronous programming in JavaScript in this post](https://bonvic.dev/writings/diferrence-between-synchronous-and-asynchronous-javascript/)
+Learn the difference between [Asynchronous and Synchronous programming in JavaScript in this post](https://bonvic.dev/blog/diferrence-between-synchronous-and-asynchronous-javascript/)
 
 If you have any questions drop them in the comment section below
 
