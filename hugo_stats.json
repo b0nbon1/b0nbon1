@@ -191,6 +191,9 @@
       "whitespace-nowrap"
     ],
     "ids": [
+      "-1-metrics--your-systems-dashboard",
+      "-2-logs--your-black-box-recorder",
+      "-3-traces--your-flight-path-recorder",
       "1-manual-transaction-management-without-proper-error-handling",
       "1-never-block-the-event-loop",
       "2-committing-too-early",
@@ -322,6 +325,7 @@
       "worker-threads-manual-control",
       "working-of-c-pointers",
       "wrapping-it-all-together",
+      "wrapping-it-all-up",
       "wrapping-up",
       "write-files"
     ]
