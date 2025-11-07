@@ -471,34 +471,91 @@ code {
   color: rgb(var(--color-text-primary));
 }
 
-/* Tables */
+/* Tables - Responsive with horizontal scroll */
 .prose table {
   width: 100%;
   table-layout: auto;
   text-align: left;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 2em 0;
   font-size: 0.875em;
   line-height: 1.7142857;
   border-collapse: collapse;
+  border: 1px solid rgb(var(--color-border));
+  border-radius: 0.375rem;
+  /* Enable horizontal scrolling */
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* Restore table display for inner elements */
+.prose thead,
+.prose tbody {
+  display: table;
+  width: 100%;
 }
 
 .prose thead {
-  border-bottom: 1px solid rgb(var(--color-border-focus));
+  border-bottom: 2px solid rgb(var(--color-border-focus));
+  background-color: rgb(var(--color-surface));
 }
 
 .prose thead th {
   font-weight: 600;
-  padding: 0.5714286em;
+  padding: 0.75em 0.857em;
   color: rgb(var(--color-text-primary));
+  white-space: nowrap;
+  background-color: rgb(var(--color-surface));
+  display: table-cell;
 }
 
 .prose tbody tr {
   border-bottom: 1px solid rgb(var(--color-border));
+  display: table-row;
+}
+
+.prose tbody tr:last-child {
+  border-bottom: none;
+}
+
+.prose tbody tr:hover {
+  background-color: rgb(var(--color-surface));
 }
 
 .prose tbody td {
-  padding: 0.5714286em;
+  padding: 0.75em 0.857em;
+  vertical-align: top;
+  display: table-cell;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .prose table {
+    font-size: 0.8125em;
+    /* Add subtle shadow to indicate scrollability */
+    box-shadow: 
+      inset -8px 0 8px -8px rgba(0, 0, 0, 0.15),
+      inset 8px 0 8px -8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dark .prose table {
+    box-shadow: 
+      inset -8px 0 8px -8px rgba(0, 0, 0, 0.4),
+      inset 8px 0 8px -8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .prose thead th,
+  .prose tbody td {
+    padding: 0.5em 0.7em;
+    min-width: 100px;
+  }
+  
+  /* First column can be narrower */
+  .prose thead th:first-child,
+  .prose tbody td:first-child {
+    min-width: 80px;
+  }
 }
 
 /* Images */
