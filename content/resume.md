@@ -41,27 +41,7 @@ Experienced Software Engineer with over 6 years of developing scalable applicati
 
 ## Professional Experience
 
-### January 2025 - Current – Globallinkplus (Remote, US)
-
-**Fullstack Engineer**
-
-- Built and maintained a core ERP system using ReactJS, Node.js, and PostgreSQL to support logistics, invoicing, inventory, and customer management across 15+ B2B and B2C clients.
-- Customised and extended existing systems based on customer-specific requirements, directly collaborating with clients to deliver fully tailored solutions that improved client retention
-- Collaborated with cross-functional teams to deploy customer-specific portals, reducing onboarding time and ensuring successful adoption of the platform.
-- Supported end-to-end deployment cycles for new clients, including environment configuration, code delivery, and production rollout.
-- Designed and implemented backend APIs to support new frontend features, ensuring performance and data consistency across the platform.
-
-### February 2024 - November 2024 – VMware/Broadcom (Bulgaria, Sofia)
-
-**Cloud Automation Support Engineer**
-
-- Resolved complex cloud automation issues with minimal downtime, providing excellent customer support and maintaining a high customer satisfaction score through fast, effective troubleshooting.
-- Built and maintained custom automation scripts using Node.js and TypeScript in vRA, reducing manual tasks by 30% and streamlining operations.
-- Contributed to VMware's open-source initiative by enhancing build-tools-for-vmware-aria on GitHub, improving developer tooling and automation workflows.
-- Authored detailed runbooks and public-facing documentation to improve knowledge sharing and reduce incoming support tickets.
-- Worked closely with engineering and QA to reproduce bugs, validate fixes, and improve product reliability in real-world deployments for customers.
-
-### February 2021 - January 2024 – Safaricom PLC(Andela) (Remote)
+### February 2021 - current – Safaricom PLC(Andela) (Remote)
 
 **Software Engineer**
 
@@ -72,7 +52,18 @@ Experienced Software Engineer with over 6 years of developing scalable applicati
 - Led the integration of Generative AI into the enterprise backend, enabling dynamic product recommendations based on customer business needs, significantly reducing support turnaround time and improving enterprise solution adoption.
 - Optimised CI/CD pipelines using Jenkins, enhancing deployment speed and reliability by integrating automated monitoring with AWS CloudWatch, Prometheus, and Grafana.
 
-### May 2018 - December 2020 – Andela (Kigali)
+### July 2020 - February 2021 – FreelyFormd (Kampala, Uganda - Remote)
+
+**Fullstack Product Developer**
+
+- Enhanced the Tegeka Home Services app, an iOS/Android platform, improving UX/UI with React Native and increasing app traffic by 80%.
+- Resolved server bugs and migrated frameworks from LoopbackJS to NestJS, Redis, and MongoDB with TypeScript, reducing debugging time by 70%.
+- Enhanced CI/CD processes by building automation pipelines with GitLab, GitLab CI and self-hosted registry, which made deployments faster and delivered more client releases.
+- Deployed and managed mono-repo applications using Docker and Docker Swarm, streamlining the development process and enabling seamless scaling and load balancing across services.
+- Implemented an automated code quality analysis tool, reducing bug rates by 18%.
+- Designed and maintained PostgreSQL databases, ensuring data integrity, performance optimisation, and efficient query handling.
+
+### May 2018 - April 2020 – Andela (Kigali)
 
 **Associate Software Engineer**
 
@@ -90,5 +81,3 @@ Experienced Software Engineer with over 6 years of developing scalable applicati
 
 [github]: https://github.com/b0nbon1
 [linkedin]: https://www.linkedin.com/in/bonvic-bundi/
-
-

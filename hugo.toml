@@ -16,7 +16,7 @@ meta = "Bonvic's blog. | Software engineer. Mostly doing fullstack work with Typ
 author = "Bonvic Bundi"
 authorTitle = "Software Engineer"
 numberOfPostsInHomePage = 5
-lastUpdated = "October 31th, 2025"
+lastUpdated = "November 18th, 2025"
 
 [params.utterances]
 repo = "b0nbon1/b0nbon1"  # Replace with your GitHub username/repo (e.g., "b0nbon1/blog-comments")
@@ -60,6 +60,11 @@ name = 'Github'
 url = "https://github.com/b0nbon1"
 weight = 1
 
+[[menus.socials]]
+name = 'X'
+url = 'https://x.com/b0nvic'
+weight = 1
+
 [[menus.footer]]
 name = 'LinkedIn'
 url = "https://www.linkedin.com/in/bonvic-bundi/"
@@ -69,6 +74,11 @@ weight = 2
 name = 'Email'
 url = "mailto:bundi.bonvic@gmail.com"
 weight = 3
+
+[[menus.footer]]
+name = 'X'
+url = 'https://x.com/b0nvic'
+weight = 4
 
 [module]
 [[module.mounts]]

@@ -29,6 +29,12 @@
       ],
       "watching": [
         {
+          "title": "Game of Thrones",
+          "imdb": "tt0944947",
+          "finishedOn": "currently watching",
+          "rating": 4
+        },
+        {
           "title": "Nobody",
           "imdb": "tt7888964",
           "finishedOn": "2025-07-12",
