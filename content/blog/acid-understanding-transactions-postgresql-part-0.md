@@ -1,5 +1,5 @@
 ---
-title: "ACID Database Properties with PostgreSQL: Part 1 - Transactions"
+title: "ACID Database Properties with PostgreSQL: Part 0 - Transactions"
 date: 2025-11-03T10:00:00+03:00
 description: "Understanding Transactions with PostgreSQL before we explore ACID properties"
 tags: ["Database", "ACID", "Atomicity", "Transactions", "PostgreSQL"]
