@@ -40,6 +40,8 @@ The SQL standard defines three problematic scenarios that can occur when transac
 
 A dirty read happens when one transaction reads uncommitted changes from another transaction. If that other transaction rolls back, you've read data that never actually existed.
 
+**Analogy:** Like seeing a pending debit on your bank account before it actually clears. If the merchant cancels it, you've seen money deducted that was never actually taken.
+
 ```sql
 -- Transaction A
 BEGIN;
@@ -57,6 +59,8 @@ SELECT balance FROM accounts WHERE id = 1;
 ### 2. Non-Repeatable Read
 
 This occurs when you read the same row twice within a transaction and get different values because another transaction modified and committed the row between your reads.
+
+**Analogy:** Like checking your account balance, then checking again a moment later and seeing a different amount because a pending transaction cleared in between.
 
 ```sql
 -- Transaction A
@@ -77,6 +81,8 @@ COMMIT;
 ### 3. Phantom Read
 
 Phantoms are rows that appear or disappear between queries in the same transaction. While non-repeatable reads involve existing rows changing, phantom reads involve the set of rows itself changing.
+
+**Analogy:** Like viewing your pending transactions list, looking away, then seeing additional pending charges appear that weren't there before.
 
 ```sql
 -- Transaction A
@@ -102,6 +108,8 @@ PostgreSQL supports three of the four SQL-standard isolation levels (it treats R
 
 Each statement sees only data committed before that statement began. Different statements within the same transaction can see different committed data.
 
+**Analogy:** Like viewing only cleared transactions in your bank account, not pending ones. But if you refresh, newly cleared transactions show up.
+
 ```sql
 -- Set for current transaction
 BEGIN;
@@ -118,6 +126,8 @@ This level prevents dirty reads but allows non-repeatable reads and phantoms. It
 ### 2. Repeatable Read
 
 The transaction sees a snapshot of the database as it was when the transaction started. All queries see the same data, regardless of what other transactions commit.
+
+**Analogy:** Like receiving a monthly bank statement—it shows your balance at a specific moment. No matter how many times you look at it, the numbers don't change, even if your actual balance does.
 
 ```sql
 BEGIN;
@@ -156,6 +166,8 @@ UPDATE accounts SET balance = balance + 100 WHERE id = 1;
 ### 3. Serializable (Highest Isolation)
 
 The strictest level. Transactions execute as if they ran one after another, with no overlap. PostgreSQL uses **Serializable Snapshot Isolation (SSI)** to detect conflicts without heavy locking.
+
+**Analogy:** Like an ATM queue—only one person can process their transaction at a time. Everyone waits their turn, ensuring no conflicts, but there's a waiting time.
 
 ```sql
 BEGIN;
